@@ -1,0 +1,22 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/constants.scss';
+
+section {
+    margin: 20px auto;
+    padding: 5px 0px;
+}
+
+.features-heading {
+    margin-bottom: $div-margin;
+}
+
+.features-list {
+    margin-left: -$elm-margin;
+    margin-right: -$elm-margin;
+    margin-top: $div-margin;
+    &-item {
+        width: 20%;
+        margin: 10px;
+    }
+}

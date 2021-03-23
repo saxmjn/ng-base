@@ -1,0 +1,150 @@
+@import '../../../../assets/styles/constants.scss';
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+
+
+
+$chatbox-height: 600px;
+$inbox-header-height: 10%;
+$inbox-header-body: 75%;
+$inbox-header-footer: 15%;
+
+
+.chat {
+    &-container { 
+        margin: 0px auto;
+    }
+    &-box {
+        display: flex;
+        flex-direction: row;
+        height: $chatbox-height;
+        background-color: #FFF;
+        border-radius: $card-border-radius;
+        box-shadow: $card-shadow;
+        .chat-sidebar {
+            width: 30%;
+            height: 100%;
+            background-color: #FFF;
+            border-right: $border-type-1;
+            box-shadow: $shadow-1;
+            &-branding {
+                height: $inbox-header-height;
+                padding: $layout-padding;
+                h4 {
+                    margin: 20px $elm-margin;
+                }
+            }
+            &-actions {
+                i {
+                    margin: 0 $elm-margin;
+                }
+            }
+            &-list {
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    padding: $layout-padding;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $color-brand-tone4;
+                    }
+                    img {
+                        width: $icon-container-width;
+                        height: $icon-container-height;
+                        border-radius: $icon-container-border-radius;
+                        border: $icon-container-border;
+                        margin: auto $elm-margin;
+                    }
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .name {
+
+                        }
+                        .last-message {
+
+                        }
+                        .last-seen {
+
+                        }
+                    }
+                }
+            }
+        }
+        .chat-inbox {
+            width: 70%;
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: $inbox-header-height;
+                border-bottom: $border-type-1;
+                box-shadow: $shadow-1;
+                .header-main {
+                    margin: 0 $elm-margin; 
+                    .chat-selected {
+                        cursor: pointer;
+                        margin: 0 15px;
+                        display: flex;
+                        img {
+                            border-radius: $icon-container-border-radius;
+                            border: $icon-container-border;
+                            width: 40px;
+                            height: 40px;
+                            margin: 0 $elm-margin;
+                        }
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .header-actions {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 $elm-margin;
+                    i {
+                        margin: 0 2px;
+                    }
+                    
+                }
+            }
+            &-body {
+                height: $inbox-header-body;
+                $shadow-1: 1px 1px 10px -1px rgba(0, 0, 0, 0.1);
+                background-color: $color-brand-tone5;
+            }
+            &-footer {
+                height: $inbox-header-footer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: $shadow-1;
+                .msg-box {
+                    margin: 0 $elm-margin;
+                    width: 70%;
+                    input {
+                        width: -webkit-fill-available;
+                        margin-bottom: 0;
+                        box-shadow: none;
+                    }
+                }
+                .msg-actions {
+                    display: flex;
+                    align-items: center;
+                    width: 30%;
+                    margin: 0 20px;
+                    i {
+                        margin: 0 5px;
+                    }
+                    a {
+                        margin: 0 $elm-margin;
+                    }
+                }
+            }
+        }
+    }
+}

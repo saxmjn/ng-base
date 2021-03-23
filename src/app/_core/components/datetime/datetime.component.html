@@ -1,0 +1,35 @@
+<!-- <div class="datetime">
+    <div class="datetime-input" (click)="toggleCalendar(!calendarPop)">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g><g><path d="M492,352c11.046,0,20-8.954,20-20V120c0-44.112-35.888-80-80-80h-26V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20 v20h-91V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v20h-90V20c0-11.046-8.954-20-20-20s-20,8.954-20,20v20H80 C35.888,40,0,75.888,0,120v312c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20 c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40H80c-22.056,0-40-17.944-40-40V120c0-22.056,17.944-40,40-40h25v20 c0,11.046,8.954,20,20,20s20-8.954,20-20V80h90v20c0,11.046,8.954,20,20,20s20-8.954,20-20V80h91v20c0,11.046,8.954,20,20,20 c11.046,0,20-8.954,20-20V80h26c22.056,0,40,17.944,40,40v212C472,343.046,480.954,352,492,352z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="125" cy="210" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="299" cy="210" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="386" cy="210" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="125" cy="297" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="125" cy="384" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="212" cy="210" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="212" cy="297" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="212" cy="384" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="299" cy="297" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="386" cy="297" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g><g><g><circle cx="299" cy="384" r="20" data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/></g></g></g> </svg>
+        <div>
+            <span>{{startDate | date}}</span> <span *ngIf=endDate>to</span> <span>{{endDate | date}}</span>
+        </div>
+    </div>
+    <div class="datetime-popup" [ngClass]="{'open': calendarPop}">
+        <div id="calendar" class="calendar">
+            <div class="calendar-fromto">
+                <li [ngClass]="{'active': fromto == 'start'}" (click)="toggleFromto('start')">Start From</li>
+                <li [ngClass]="{'active': fromto == 'end', 'disabled': !startDate}" (click)="toggleFromto('end')">End On</li>
+            </div>
+            <div class="calendar-window">
+                <div class="calendar-box">
+                    <div *ngIf="fromto == 'start'">
+                        <p-calendar [(ngModel)]="startDate" [inline]='true' [showOtherMonths]='true' (onSelect)="dateSelected($event)"></p-calendar>
+                    </div>
+                    <div *ngIf="fromto == 'end'">
+                        <p-calendar [(ngModel)]="endDate" [minDate]="startDate" [inline]='true' [showOtherMonths]='true' (onSelect)="dateSelected($event)"></p-calendar>
+                    </div>
+                </div>
+                <div class="calendar-options">
+                    <li (click)="toggleOption('yesterday')">Since Yesterday</li>
+                    <li (click)="toggleOption('last-month')">Last Month</li>
+                    <li (click)="toggleOption('current-month')">Current Month</li>
+                </div>
+            </div>
+            <div class="calendar-actions">
+                <label (click)="toggleAction('save')" class="btn-solid-brand size-xs">Save</label>
+                <label (click)="toggleAction('cancel')" class="btn-outline-brand size-xs">Cancel</label>
+            </div>
+        </div>
+    </div>
+</div> -->

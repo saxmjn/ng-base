@@ -1,0 +1,81 @@
+@import '../../../../assets/styles/constants.scss';
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+
+.file-activity-card, .file-list-card {
+    min-height: 100px;
+}
+
+.file-activity-card {
+    margin-bottom: $section-margin;
+    .file-activity-heading {
+        margin: $div-margin-s 0;
+    }
+    .file-activity-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: - $elm-margin;
+        margin-right: - $elm-margin;
+        li {
+            width: 33%;
+            .file-activity-panel {
+                margin: $elm-margin;
+                .cls-panel-header {
+                    margin-bottom: $elm-margin;
+                    img {
+                        width: $img-container-width-s;
+                        height: $img-container-height-s;
+                    }
+                    .text {
+                        margin-left: $elm-margin;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+                .cls-panel-body {
+                    margin-bottom: $elm-margin;
+                }
+                .cls-panel-footer {
+                    i {
+                        margin: $elm-margin-s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.file-list-card {
+    .file-list-heading {
+        margin: $div-margin-s 0;
+    }
+    .file-list-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $elm-margin-l;
+        .search {
+            width: 90%;
+        }
+        .actions {
+            margin: $elm-margin;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .file-list-body {
+        margin-left: -$elm-margin;
+        margin-right: -$elm-margin;
+        .folders-list {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                margin: $elm-margin;
+                border: $border-type-2 !important;
+            }
+        }
+    }
+}

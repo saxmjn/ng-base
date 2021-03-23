@@ -1,0 +1,103 @@
+@import '../../../../assets/styles/constants.scss';
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+
+.contact {
+    &-upload-container {
+        margin: 0px auto;
+        margin-bottom: $section-margin;
+            .contact-upload-items {
+                display: flex; 
+                flex-direction: row;
+                align-items: center;
+                margin-left: - $elm-margin;
+                margin-right: - $elm-margin;
+                li {
+                    width: 30%;
+                    margin: 0 $elm-margin;
+                }
+        }
+    }
+    &-list-container {
+        .contact-list-box {
+            min-height: 500px;
+            .cls-card-header {
+                display: flex;
+                justify-content: space-between;
+                padding: $card-padding;
+                .search {
+                    width: 60%;
+                }
+                .filter {
+                    width: 30%;
+                }
+                .actions {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $elm-margin-l;
+                }
+            }
+            .cls-card-body {
+                .contact-listing-heading {
+                    padding: $card-padding;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    li {
+                        font-size: $font-size-m;
+                        font-weight: 700;
+                        width: -webkit-fill-available;
+                        &:last-child {
+                            justify-content: right;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                        }
+                    }
+                }
+                .contact-listing {
+                    li {
+                        padding: $layout-padding $layout-padding-l;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: $border-type-1;
+                        &:hover {
+                            background-color: $color-brand-tone4;
+                        }
+                        .profile {
+                            display: flex;
+                            align-items: center;
+                            width: 20%;
+                            span {
+                                margin: 0 $elm-margin;
+                            }
+                        }
+                        .email {
+                            width: 20%;
+                        }
+                        .phone {
+                            width: 20%;
+                        }
+                        .status {
+                            width: 20%;
+                        }
+                        .actions {
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: right;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,21 @@
+<div *ngIf="type != 'hidden'">
+    <div class="navbar fixed-position">
+        <!-- Navbar Brand -->
+        <div class="navbar-brand" (click)="goTo('home')">
+            <img width="40" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="/>
+        </div>
+        <!-- Navbar Control -->
+        <div class="navbar-controls">
+            <li [ngClass]="{'active': tab == 'shopping'}" (click)="goTo('shopping')">Shopping</li>
+            <li [ngClass]="{'active': tab == 'videos'}" (click)="goTo('videos')">Community</li>
+        </div>
+        <!-- Navbar Settings -->
+        <div class="navbar-settings">
+            <label class="btn-label-alt auth" (click)="goTo('auth')">SignIn</label>
+            <div class="profile">
+                <img class="profile" src="" (click)="goTo('settings')" onerror="this.src='https://s3.ap-south-1.amazonaws.com/cmn-user-profile-image/user-avatar-placeholder.png'">
+            </div>
+        </div>
+    </div>
+</div>
+

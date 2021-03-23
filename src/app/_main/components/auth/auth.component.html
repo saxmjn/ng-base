@@ -1,0 +1,63 @@
+<div class="auth-container">
+    <div class="cls-card">
+        <!----->
+        <div *ngIf="state == 'register-phone'" class="form-body">
+            <h2>Register to your account</h2>
+            <p>Welcome! We're excited to show you awesomeness</p>
+            <div class="form">
+                <input class="input-outline-white size-s input-text" placeholder="Enter your name" [(ngModel)]="details.name">
+                <input class="input-outline-white size-s input-text" placeholder="Enter your phone number" type="number" [(ngModel)]="details.phone">    
+            </div>
+            <div class="prompt">
+                <app-alert [events]="events"></app-alert>
+            </div>
+            <div class="actions">
+                <div class="actions-main-cta">
+                    <label *ngIf="!events.loader" class="btn-solid-brand size-s" (click)="toggleState('register-get-otp')">Get OTP</label>
+                    <label *ngIf="events.loader" class="btn-solid-brand size-s">
+                        <div class="lds-dots">
+                            <div class="loader-dot dot-1"></div>
+                            <div class="loader-dot dot-2"></div>
+                            <div class="loader-dot dot-3"></div>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <span class="actions-title text-label-small block">Did you read our Privacy Terms</span>
+                    <a class="btn-label-brand" (click)="goTo('privacy-policy')">Read Here</a>
+                </div>
+            </div>
+        </div>
+        <!----->
+        <div *ngIf="state == 'register-otp'" class="form-body">
+            <h2>Verify your phone number</h2>
+            <p>Phone verification code sent to your phone</p>
+            <div class="form">
+                <div class="input-otp">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[0]">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[1]">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[2]">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[3]">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[4]">
+                    <input placeholder="" type="number" min="0" max="9" [(ngModel)]="details.otp[5]">
+                </div>
+            </div>
+            <div class="actions">
+                <div class="actions-main-cta">
+                    <label *ngIf="!events.loader" class="btn-solid-brand btn-default" (click)="toggleState('register-confirm')">Confirm</label>
+                    <label *ngIf="events.loader" class="btn-solid-brand btn-default">
+                        <div class="lds-dots">
+                            <div class="loader-dot dot-1"></div>
+                            <div class="loader-dot dot-2"></div>
+                            <div class="loader-dot dot-3"></div>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <span class="actions-title text-label-small block">Register with different phone?</span>
+                    <a class="btn-label-brand size-s" (click)="toggleState('goto-phone')">Change Number</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

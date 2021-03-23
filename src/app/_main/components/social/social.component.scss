@@ -1,0 +1,68 @@
+@import '../../../../assets/styles/constants.scss';
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+
+section {
+    display: flex;
+    flex-direction: row;
+    .col-1 {
+        width: 60%;
+    }
+    .col-2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        .activities-container {
+            width: 90%;
+            margin: 0px auto;
+            margin-bottom: $elm-margin-l;
+            .activities-card {
+                .activities-list {
+                    li {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: $elm-margin-l;
+                        justify-content: space-between;
+                        .border {
+                            width: 2px;
+                            height: auto;
+                            border-radius: 5px;
+                            margin-right: $elm-margin;
+                            background-color: $color-brand;
+                        }
+                        .action {
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+        .friends-container {
+            width: 90%;
+            margin: 0px auto;
+            .friends-card {
+                .friends-list {
+                    li {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: $elm-margin;
+                        .profile {
+                            display: flex;
+                            flex-direction: row;
+                            img {
+                                margin-right: $elm-margin;
+                            }
+                            .profile-text {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

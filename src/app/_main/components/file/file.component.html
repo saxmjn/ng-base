@@ -1,0 +1,79 @@
+<section class="file-activity-container">
+    <div class="file-activity-card cls-card">
+        <div class="file-activity-heading">
+            <h4>Acitivities on Files</h4>
+        </div>
+        <div class="file-activity-actions">
+            
+        </div>
+        <div class="file-activity-list">
+            <li *ngFor="let item of activities" >
+                <div class="file-activity-panel cls-panel">
+                    <div class="cls-panel-header">
+                        <img src="https://s3.ap-south-1.amazonaws.com/cmn-user-profile-image/user-avatar-placeholder.png">
+                        <div class="text">
+                            <span class="name">{{item.name}}</span>
+                            <span class="datetime">{{item.datetime}}</span>
+                        </div>
+                    </div>
+                    <div class="cls-panel-body">
+                        <p>{{item.message}}</p>
+                    </div>
+                    <div class="cls-panel-footer">
+                        <i class="cls-icon size-s">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 367.85 367.85" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M318.17,162.85l-128-160c-3.032-3.8-9.464-3.8-12.496,0l-128,160c-1.92,2.4-2.296,5.688-0.968,8.464 c1.344,2.776,4.152,4.536,7.224,4.536h72v176c0,8.824,7.176,16,16,16h80c8.824,0,16-7.176,16-16v-176h72 c3.072,0,5.88-1.76,7.208-4.536C320.474,168.546,320.098,165.25,318.17,162.85z M231.93,159.85c-4.416,0-8,3.584-8,8v184h-80v-184 c0-4.416-3.584-8-8-8H72.578L183.93,20.658L295.282,159.85H231.93z" fill="#333333" data-original="#000000" style=""/></g></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g></g></svg>
+                        </i>
+                        <i class="cls-icon size-s">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m23.5 22c-.179 0-.348-.096-.438-.258-2.301-4.159-6.683-6.742-11.435-6.742h-1.627v4.5c0 .2-.119.38-.302.459-.186.081-.397.042-.542-.096l-9-8.5c-.099-.094-.156-.225-.156-.363s.057-.269.156-.363l9-8.5c.146-.137.358-.176.542-.096.183.079.302.259.302.459v4.5c7.726.039 14 6.335 14 14.07v.43c0 .228-.154.427-.375.484-.042.011-.084.016-.125.016zm-14-8h2.127c4.488 0 8.67 2.14 11.301 5.688-.693-6.56-6.258-11.688-12.998-11.688h-.43c-.276 0-.5-.224-.5-.5v-3.84l-7.771 7.34 7.771 7.34v-3.84c0-.276.224-.5.5-.5z" fill="#333333" data-original="#000000" style=""/></g></svg>
+                        </i>
+                        <i class="cls-icon size-s">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 49.94 49.94" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="M48.856,22.731c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757 c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996 L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.623C1.71,16.82,0.603,17.753,0.178,19.06 c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.702 c-0.232,1.353,0.313,2.694,1.424,3.502c1.11,0.809,2.555,0.914,3.772,0.273l10.814-5.686c0.461-0.242,1.011-0.242,1.472,0 l10.815,5.686c0.528,0.278,1.1,0.415,1.669,0.415c0.739,0,1.475-0.231,2.103-0.688c1.111-0.808,1.656-2.149,1.424-3.502 L39.651,32.66c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.731z M37.681,32.998l2.065,12.042c0.104,0.606-0.131,1.185-0.629,1.547 c-0.499,0.361-1.12,0.405-1.665,0.121l-10.815-5.687c-0.521-0.273-1.095-0.411-1.667-0.411s-1.145,0.138-1.667,0.412l-10.813,5.686 c-0.547,0.284-1.168,0.24-1.666-0.121c-0.498-0.362-0.732-0.94-0.629-1.547l2.065-12.042c0.199-1.162-0.186-2.348-1.03-3.17 L2.48,21.299c-0.441-0.43-0.591-1.036-0.4-1.621c0.19-0.586,0.667-0.988,1.276-1.077l12.091-1.757 c1.167-0.169,2.176-0.901,2.697-1.959l5.407-10.957c0.272-0.552,0.803-0.881,1.418-0.881c0.616,0,1.146,0.329,1.419,0.881 l5.407,10.957c0.521,1.058,1.529,1.79,2.696,1.959l12.092,1.757c0.609,0.089,1.086,0.491,1.276,1.077 c0.19,0.585,0.041,1.191-0.4,1.621l-8.749,8.528C37.866,30.65,37.481,31.835,37.681,32.998z" fill="#333333" data-original="#000000" style=""/><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g></g></svg>
+                        </i>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+</section>
+<section class="file-list-container">
+    <div class="file-list-card cls-card">
+        <div class="file-list-heading">
+            <h4>Your Files</h4>
+        </div>
+        <div class="file-list-actions">
+            <div class="search">
+                <div class="cls-input-search">
+                    <i class="cls-icon">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve"> <g> <g> <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667 S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732 c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667 c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g> </svg>
+                    </i>
+                    <input>
+                </div>
+            </div>
+            <div class="actions">
+                <i class="cls-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 443.294 443.294" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m297.689 120.374 34.064-102.138c1.42-4.221.703-8.875-1.894-12.487-2.61-3.612-6.791-5.749-11.241-5.749h-193.942c-4.451 0-8.631 2.137-11.242 5.749-2.597 3.612-3.314 8.252-1.907 12.487l34.051 102.165c-38.799 25.582-62.46 68.696-62.46 115.099 0 7.657 6.196 13.853 13.853 13.853h110.823v166.235l13.853 27.706 13.853-27.706v-166.235h110.823c7.657 0 13.853-6.196 13.853-13.853 0-46.415-23.674-89.543-62.487-115.126zm-185.972 101.273c4.464-34.673 25.514-65.653 57.143-82.955 5.885-3.206 8.617-10.173 6.507-16.532l-31.48-94.454h155.507l-31.494 94.427c-2.124 6.358.609 13.325 6.494 16.545 31.656 17.289 52.72 48.282 57.184 82.969z" fill="#333333" data-original="#000000" style="" class=""/></g></svg>
+                </i>
+                <i class="cls-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m4.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m4.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m4.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m13.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m13.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m13.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m22.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m22.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/><path xmlns="http://www.w3.org/2000/svg" d="m22.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z" fill="#333333" data-original="#000000" style=""/></g></svg>
+                </i>
+                <i class="cls-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 393 393.99003" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m368.3125 0h-351.261719c-6.195312-.0117188-11.875 3.449219-14.707031 8.960938-2.871094 5.585937-2.3671875 12.3125 1.300781 17.414062l128.6875 181.28125c.042969.0625.089844.121094.132813.183594 4.675781 6.3125 7.203125 13.957031 7.21875 21.816406v147.796875c-.027344 4.378906 1.691406 8.582031 4.777344 11.6875 3.085937 3.105469 7.28125 4.847656 11.65625 4.847656 2.226562 0 4.425781-.445312 6.480468-1.296875l72.3125-27.574218c6.480469-1.976563 10.78125-8.089844 10.78125-15.453126v-120.007812c.011719-7.855469 2.542969-15.503906 7.214844-21.816406.042969-.0625.089844-.121094.132812-.183594l128.683594-181.289062c3.667969-5.097657 4.171875-11.820313 1.300782-17.40625-2.832032-5.511719-8.511719-8.9726568-14.710938-8.960938zm-131.53125 195.992188c-7.1875 9.753906-11.074219 21.546874-11.097656 33.664062v117.578125l-66 25.164063v-142.742188c-.023438-12.117188-3.910156-23.910156-11.101563-33.664062l-124.933593-175.992188h338.070312zm0 0" fill="#333333" data-original="#000000" style=""/></g></svg>
+                </i>
+            </div>
+        </div>
+        <div class="file-list-body">
+            <div class="folders-list">
+                <li *ngFor="let item of folders" class="cls-card card-style-pluto">
+                    <i class="cls-icon size-l">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 443.294 443.294" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m415.588 415.588h-387.882c-15.274 0-27.706-12.432-27.706-27.706v-332.47c0-15.273 12.432-27.706 27.706-27.706h124.676c3.68 0 7.197 1.461 9.794 4.058l51.353 51.353h202.058c15.273 0 27.706 12.432 27.706 27.706v277.059c.001 15.274-12.431 27.706-27.705 27.706zm-387.882-360.176v332.471h387.882v-277.059h-207.794c-3.68 0-7.197-1.461-9.794-4.058l-51.353-51.353c-.001-.001-118.941-.001-118.941-.001z" fill="#333333" data-original="#000000" style=""/></g></svg> 
+                    </i>
+                    <div class="text">
+                        <span class="text-title">{{item.name}}</span>
+                        <span class="text-subtitle">{{item.quantity}} Files</span>
+                    </div>
+                </li>
+            </div>
+            <div class="files-list"></div>
+        </div>
+    </div>
+</section>

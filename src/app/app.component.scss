@@ -1,0 +1,21 @@
+@import '../assets/styles/constants.scss';
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    .col-1 {
+        width: $sidebar-width;
+    }
+    .col-2 {
+        width: $sidebar-widthless;
+        .window {
+            margin-top: $window-margin-top;
+            padding: $window-padding;
+            &-container {
+                width: $window-container-width;
+                margin: auto;
+                margin-top: $window-container-margin-top;
+            }
+        }
+    }
+}

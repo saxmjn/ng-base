@@ -1,0 +1,114 @@
+@import '../../../../assets/styles/constants.scss';
+
+.navbar{
+    border-bottom: 1px solid $color-grey-lighter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $gradient-background;
+    height: $navbar-height;
+
+    .brand-image{
+        min-width: 50px;
+        height: 30px;
+    }
+    .brand-text{
+        margin-left: 15px;
+        color: $gradient-background;
+    }
+
+    .hamburger{
+        color: white;
+        @media(min-width: 993px){
+            display: none;
+        }
+    }
+
+    @media(max-width: 552px){
+        padding: 15px 0px;
+        .brand-text{
+            display: none;
+        }
+    }
+
+    &-brand{
+        width: 20%;
+        a{
+            display: flex;
+            align-items: center;
+        }
+        @media(max-width: 552px){
+            display: none;
+        }
+    }
+
+    &-controls {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        li {
+            color: #555;
+            margin: 0 30px;
+            font-weight: 600;
+            cursor: pointer;
+            &.active {
+                color: $color-brand;
+            }
+            &.hover {
+                
+            }
+        }
+        @media(max-width: 552px){
+            width: 100%;
+        }
+    }
+
+    &-settings{
+        width: 20%;
+        padding-right: 10px;
+        height: 100%;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        a{
+            margin-left: 30px;
+            &:hover, &:active{
+                color: $gradient-background;
+            }
+        }
+        .auth {
+            margin-right: 10px;
+        }
+        .profile{
+            img {
+                width: 35px;
+            height: 35px;
+            background: #ECECEC;
+            border-radius: 2px;
+            cursor: pointer;
+            }
+        }
+
+        @media(max-width: 552px){
+            padding-right: 0;
+            .loggedIn{
+                h5{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+// Toggle Classes
+.fixed-position{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 20;
+    background:$gradient-background;
+}

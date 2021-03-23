@@ -1,0 +1,40 @@
+
+@import '../../../../assets/styles/constants.scss';
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+
+.sidebar {
+    background: #FFF;
+    height: 100vh;
+    width: $sidebar-width;
+    position: fixed;
+    border-right: $border-type-1;
+    z-index: 100;
+    margin-top: $sidebar-margin-top;
+    .header {
+        .branding {
+            padding: $sidebar-padding;
+        }
+    }
+    .navigation {
+        list-style: none;
+        li {
+            display: flex;
+            height: $sidebar-nav-height;
+            cursor: pointer;
+            padding: $sidebar-padding;
+            align-items: center;
+            &:hover {
+                background-color: $color-brand-tone4;
+            }
+            i {
+                margin: auto $elm-margin;
+            }
+            span {
+            }
+        }
+    }
+    .footer {
+
+    }
+}

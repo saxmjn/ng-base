@@ -1,0 +1,28 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/constants.scss';
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: inherit;
+    padding: 30px;
+    border-bottom: 1px solid #efefef;
+}
+
+.section-cards {
+    .cls-card {
+        margin: $elm-margin;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    a {
+        margin: 10px;
+    }
+}
+
