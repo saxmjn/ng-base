@@ -39,7 +39,7 @@
     <div class="contact-list-heading">
         <h4>Contacts List</h4>
         <div>
-
+            <a class="btn-solid-brand-lighter size-s">Add New</a>
         </div>
     </div>
     <div class="contact-list-box cls-card no-padded">
@@ -63,16 +63,16 @@
         </div>
         <div class="cls-card-body no-padded">
             <div class="contact-listing-heading" >
-                <li>Profile</li>
-                <li>Email</li>
-                <li>Phone</li>
-                <li>Status</li>
-                <li>Actions</li>
+                <li><span class="cls-label">Profile</span></li>
+                <li><span class="cls-label">Email</span></li>
+                <li><span class="cls-label">Phone</span></li>
+                <li><span class="cls-label">Status</span></li>
+                <li><span class="cls-label">Actions</span></li>
             </div>
             <div class="contact-listing">
                 <li *ngFor="let item of contacts">
                     <div class="profile">
-                        <img class="cls-img" src="https://s3.ap-south-1.amazonaws.com/cmn-user-profile-image/user-avatar-placeholder.png">
+                        <img class="cls-img" src="{{item.src}}">
                         <span>{{item.name}}</span>
                     </div>
                     <div class="email">

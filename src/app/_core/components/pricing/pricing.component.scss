@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/constants.scss';
+
+
+.pricing-container {
+    .pricing-heading{
+        text-align: center;
+        margin-bottom: $elm-margin-xl;
+    }
+    .pricing-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .pricing-card-container {
+            list-style: none;
+            width: 30%;
+            margin: 0 $elm-margin;
+            .pricing-card {
+                padding: $card-padding-l;
+                .pricing-title {
+                    margin-bottom: $elm-margin-l;
+                }
+                .pricing-features {
+                    margin-bottom: $elm-margin-l;
+                    .pricing-features-item {
+                        display: flex;
+                        i {
+                            margin-right: $elm-margin;
+                        }
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                        }
+                        margin-bottom: $elm-margin;
+                    }
+                }
+                .pricing-actions {
+                    a:first-child {
+                        margin-right: $elm-margin;
+                    }
+                }
+            }
+        }
+    }
+}

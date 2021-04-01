@@ -1,0 +1,49 @@
+<section class="template-heading">
+    <div class="">
+        <h3>Design Templates</h3>
+        <p>What do you want to do next with your app?</p>
+    </div>
+    <div class="template-list flex-row-start">
+        <label class="cls-label touchable" (click)="loadWindow('header')">Header</label>
+        <label class="cls-label touchable" (click)="loadWindow('features')">Features</label>
+        <label class="cls-label touchable" (click)="loadWindow('pricing')">Pricing</label>
+        <label class="cls-label touchable" (click)="loadWindow('how-it-works')">How It Works</label>
+        <label class="cls-label touchable" (click)="loadWindow('faqs')">Faqs</label>
+        <label class="cls-label touchable" (click)="loadWindow('testimonials')">Testimonials</label>
+        <label class="cls-label touchable" (click)="loadWindow('team')">Team</label>
+        <label class="cls-label touchable" (click)="loadWindow('newsletter')">Newsletter</label>
+        <label class="cls-label touchable" (click)="loadWindow('connect')">Contact</label>
+        <label class="cls-label touchable" (click)="loadWindow('call-to-action')">Call to action</label>
+        <label class="cls-label touchable" (click)="loadWindow('http-codes')">HTTP Codes</label>
+        <label class="cls-label touchable" (click)="loadWindow('footers')">Footers</label>
+    </div>
+</section>
+
+<section class="template-browser">
+    <div class="browser">
+        <div class="browser-address-bar">
+            <div class="address-bar__dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+            </div>
+            <div class="address-bar__page">
+                <span>index.html</span>
+            </div>
+            <div class="address-bar__media">
+    
+            </div>
+        </div>
+        <div class="browser-window-box">
+            <div *ngIf="selectedTemplate == 'pricing'">
+                <app-pricing></app-pricing>
+            </div>
+            <div *ngIf="selectedTemplate == 'connect'">
+                <app-connect></app-connect>
+            </div>
+            <div *ngIf="selectedTemplate == 'team'">
+                <app-team></app-team>
+            </div>
+        </div>
+    </div>
+</section>

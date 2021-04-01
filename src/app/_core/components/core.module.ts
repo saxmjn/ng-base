@@ -10,6 +10,9 @@ import { DatetimeComponent } from './datetime/datetime.component';
 import { AlertComponent } from './alert/alert.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ConnectComponent } from './connect/connect.component';
+import { TeamComponent } from './team/team.component';
 @NgModule({
     imports: [CommonModule, HttpClientModule, FormsModule, RouterModule,
     //
@@ -20,6 +23,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
        AlertComponent,
        NavbarComponent,
        SidebarComponent,
+       PricingComponent,
+       ConnectComponent,
+       TeamComponent,
     ],
     exports: [
         //Modules
@@ -29,6 +35,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
         AlertComponent,
         NavbarComponent,
         SidebarComponent,
+        PricingComponent,
+        ConnectComponent,
+        TeamComponent
     ]
 })
 

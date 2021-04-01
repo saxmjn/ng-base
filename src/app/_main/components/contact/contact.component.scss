@@ -19,12 +19,20 @@
         }
     }
     &-list-container {
+        .contact-list-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: $elm-margin-l;
+        }
         .contact-list-box {
             min-height: 500px;
             .cls-card-header {
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
                 padding: $card-padding;
+                border-bottom: $border-type-1;
                 .search {
                     width: 60%;
                 }
@@ -34,7 +42,6 @@
                 .actions {
                     display: flex;
                     justify-content: space-between;
-                    margin-bottom: $elm-margin-l;
                 }
             }
             .cls-card-body {

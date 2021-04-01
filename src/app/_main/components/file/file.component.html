@@ -10,7 +10,7 @@
             <li *ngFor="let item of activities" >
                 <div class="file-activity-panel cls-panel">
                     <div class="cls-panel-header">
-                        <img src="https://s3.ap-south-1.amazonaws.com/cmn-user-profile-image/user-avatar-placeholder.png">
+                        <img class="cls-img size-s" src="{{item.src}}">
                         <div class="text">
                             <span class="name">{{item.name}}</span>
                             <span class="datetime">{{item.datetime}}</span>
@@ -64,7 +64,7 @@
         <div class="file-list-body">
             <div class="folders-list">
                 <li *ngFor="let item of folders" class="cls-card card-style-pluto">
-                    <i class="cls-icon size-l">
+                    <i class="cls-icon cls-icon-brand size-l">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 443.294 443.294" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m415.588 415.588h-387.882c-15.274 0-27.706-12.432-27.706-27.706v-332.47c0-15.273 12.432-27.706 27.706-27.706h124.676c3.68 0 7.197 1.461 9.794 4.058l51.353 51.353h202.058c15.273 0 27.706 12.432 27.706 27.706v277.059c.001 15.274-12.431 27.706-27.705 27.706zm-387.882-360.176v332.471h387.882v-277.059h-207.794c-3.68 0-7.197-1.461-9.794-4.058l-51.353-51.353c-.001-.001-118.941-.001-118.941-.001z" fill="#333333" data-original="#000000" style=""/></g></svg> 
                     </i>
                     <div class="text">

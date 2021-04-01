@@ -1,8 +1,60 @@
+//
+$color-p-dark: #000000;
+$color-p-normal: #000000;
+$color-p-light: #637178;
+$color-hover-normal: #F6F6F6;
+$color-hover-dark: #F2F2F2;
+$color-hover-brand: #F2F2F2;
+$color-image-background: #F2F2F2;
+
+// $color-primary: rgb(193, 32, 38);
+$color-black: #000000;
+$color-black-light: #111111;
+$color-grey-darker: #1a1a1a;
+$color-grey-dark: #c2c2c2;
+$color-grey: #333;
+$color-grey-light: #6b6b6b;
+$color-grey-lighter: #e6e6e6;
+$color-grey-white: #f1f1f1;
+$color-grey-blue-lighter: #f7f9fb;
+$color-grey-blue-light: #f4f7fb;
+$color-white: #ffffff;
+$color-white-light: #fafafa;
+
+//
+
+$color-brand-tone1: #0C1944;
+$color-brand-tone3: #D1D2F8;
+$color-brand-tone4: #e9edfe; 
+$color-brand-tone5: #edeff2; 
+$color-brand-tone6: #cb385a;
+$color-brand-tone7: #cb0039;
+$color-brand-tone8: #8F0012;
+
+//
+$color-brand-lighter: $color-brand-tone4;
+$color-brand-light:$color-brand-tone3;
+$color-brand: $color-brand-tone1;
+$color-brand-dark: #8F0012;
+
+$color-icon: #FFDA44;
+
+$borrowed-grey: #f5f6fa;
+
+$color-grey-background: #f2f4f7;
+
+// $gradient-background:#16a5c8;
+$gradient-background:#fff;
+$button-color: #1a1d20;
+
+
+
 // Shadow
 $shadow-1: 1px 1px 10px -1px rgba(0, 0, 0, 0.1);
 $shadow-2: 1px 2px 10px -1px rgba(0,0,0,0.1);
 $shadow-3: 0px 4px 10px 0 rgba(0,0,0,0.19);
 $shadow-4: 0 3px 4px -2px rgba(0,0,60,.1), 0 1px 1px 0 rgba(0,0,60,.1);
+$shadow-5: 1px 2px 2px -1px rgba(0,0,0,0.1);
 
 // BORDERS
 $border-type-null: 1px solid #fff;
@@ -17,6 +69,7 @@ $navbar-height: 60px;
 $navbar-fixed-height: 0px;
 $navbar-fixed-mob-height: 0px;
 $navbar-margin-left: 0;
+$navbar-bg-color: #FFF;
 
 // Sidebar
 $sidebar-width: 20%;
@@ -24,9 +77,13 @@ $sidebar-margin-top: 0;
 $sidebar-widthless: 80%;
 $sidebar-padding: 10px;
 $sidebar-nav-height: 40px;
+$sidebar-bg-color: $color-brand-tone1;
+$sidebar-hover-color: #0E1F56;
+$sidebar-text-color: #FFF;
 
 // Window
 $window-margin-top: $navbar-height;
+$window-margin-bottom: $navbar-height;
 $window-margin-left: 0;
 $window-padding: 10px;
 $window-container-margin-top: 50px;
@@ -39,7 +96,7 @@ $div-margin: 30px;
 
 // Layout
 $layout-padding-s: 5px;
-$layout-padding: 10px;
+$layout-padding: 15px;
 $layout-padding-l: 20px;
 
 
@@ -48,17 +105,19 @@ $layout-padding-l: 20px;
 $elm-margin-s: 5px;
 $elm-margin: 10px;
 $elm-margin-l: 20px;
+$elm-margin-xl: 40px;
 
 // Inputs
 $input-height: 30px;
 $input-width: auto;
 $input-padding: 5px;
+$input-padding-l: 10px;
 $input-margin-bottom: 10px;
 $input-border-radius: 4px;
 $input-text-color: #333;
 $input-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 $input-border: 1px solid #efefef !important;
-$input-bg-color: #fff;
+$input-bg-color: #FFF;
 
 // Buttons
 $button-border-radius: 3px;
@@ -80,10 +139,18 @@ $panel-padding: 15px;
 $card-border-radius: 3px;
 $card-bg-color: #FFF;
 $card-padding: 20px;
+$card-padding-l: 40px;
 $card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 $card-margin: 0;
 $card-border: 1px solid #efefef;
 $card-padding: 15px;
+
+// Labels
+$label-border-radius: 5px;
+$label-bg-color: $color-brand-tone4;
+$lable-text-color: $color-brand-tone1;
+$label-padding-horizontal: 10px;
+$label-padding-vertical: 5px;
 
 // Icons
 $icon-container-border-radius: 5px;
@@ -94,7 +161,9 @@ $icon-container-height-s: 25px;
 $icon-container-width-l: 55px;
 $icon-container-height-l: 55px;
 $icon-container-color: #EFEFEF;
+$icon-container-hover-color: $color-brand-tone4;
 $icon-container-border: $border-type-1;
+$icon-container-shadow: none;
 
 // Images
 $img-container-border-radius: 5px;
@@ -118,6 +187,7 @@ $font-size-l: 18px;
 $font-size-m: 16px;
 $font-size-s: 12px;
 $font-weight: 500;
+$font-weight-bold: 700;
 
 // Colors
 
@@ -129,43 +199,4 @@ $color-wrapper: #F5F6FC;
 
 // Container
 $container-width: 90%;
-
-//
-$color-p-dark: #000000;
-$color-p-normal: #000000;
-$color-p-light: #637178;
-$color-hover-normal: #F6F6F6;
-$color-hover-dark: #F2F2F2;
-$color-hover-brand: #F2F2F2;
-$color-image-background: #F2F2F2;
-
-// $color-primary: rgb(193, 32, 38);
-$color-black: #000000;
-$color-black-light: #111111;
-$color-grey-darker: #1a1a1a;
-$color-grey-dark: #c2c2c2;
-$color-grey: #333;
-$color-grey-light: #6b6b6b;
-$color-grey-lighter: #e6e6e6;
-$color-grey-white: #f1f1f1;
-$color-grey-blue-lighter: #f7f9fb;
-$color-grey-blue-light: #f4f7fb;
-$color-white: #ffffff;
-$color-white-light: #fafafa;
-// $color-brand: #16a5c8;
-$color-brand-lighter: #ffdfe8;
-$color-brand-light: #cb385a;
-$color-brand: #cb0039;
-$color-brand-dark: #8F0012;
-$color-brand-tone4: #e9edfe; 
-$color-brand-tone5: #edeff2; 
-$color-icon: #FFDA44;
-
-$borrowed-grey: #f5f6fa;
-
-$color-grey-background: #f2f4f7;
-
-// $gradient-background:#16a5c8;
-$gradient-background:#fff;
-$button-color: #1a1d20;
 

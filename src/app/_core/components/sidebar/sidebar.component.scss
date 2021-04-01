@@ -4,13 +4,14 @@
 @import '../../../../assets/styles/main.scss';
 
 .sidebar {
-    background: #FFF;
+    background: $sidebar-bg-color;
     height: 100vh;
     width: $sidebar-width;
     position: fixed;
     border-right: $border-type-1;
     z-index: 100;
     margin-top: $sidebar-margin-top;
+    color: $sidebar-text-color;
     .header {
         .branding {
             padding: $sidebar-padding;
@@ -25,7 +26,7 @@
             padding: $sidebar-padding;
             align-items: center;
             &:hover {
-                background-color: $color-brand-tone4;
+                background-color: $sidebar-hover-color;
             }
             i {
                 margin: auto $elm-margin;

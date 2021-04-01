@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './_main/components/auth/auth.component';
+import { ChartComponent } from './_main/components/chart/chart.component';
 import { ChatComponent } from './_main/components/chat/chat.component';
 import { ContactComponent } from './_main/components/contact/contact.component';
 import { FileComponent } from './_main/components/file/file.component';
 import { HomeComponent } from './_main/components/home/home.component';
 import { SocialComponent } from './_main/components/social/social.component';
+import { TemplateComponent } from './_main/components/template/template.component';
 import { UIComponent } from './_main/components/ui/ui.component';
 
 const routes: Routes = [
@@ -22,8 +24,16 @@ const routes: Routes = [
     component: UIComponent
   },
   {
+    path: 'template',
+    component: TemplateComponent
+  },
+  {
     path: 'chat',
     component: ChatComponent
+  },
+  {
+    path: 'chart',
+    component: ChartComponent
   },
   {
     path: 'contact',

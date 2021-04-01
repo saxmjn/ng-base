@@ -15,6 +15,8 @@ import { ChatComponent } from './chat/chat.component';
 import { ContactComponent } from './contact/contact.component';
 import { FileComponent } from './file/file.component';
 import { SocialComponent } from './social/social.component';
+import { ChartComponent } from './chart/chart.component';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
     imports: [CommonModule, HttpClientModule, FormsModule, RouterModule, CoreModule,
@@ -24,7 +26,7 @@ import { SocialComponent } from './social/social.component';
     InlineSVGModule,
 ],
     declarations: [
-        AuthComponent, HomeComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent
+        AuthComponent, HomeComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent, ChartComponent, TemplateComponent
     ],
     exports: [
         //Modules

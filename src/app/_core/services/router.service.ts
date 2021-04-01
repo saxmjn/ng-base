@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 export class RouterService {
   routeExtra = ['ig-dashboard', 'ig-medias', 'shop-dashboard', 'item', 'product', 'brand', 'video'];
   routeBusiness = ['cart', 'account', 'orders', 'notifications', 'auth'];
-  featureRoute = ['authe', 'chat', 'contact', 'file', 'social']
+  featureRoute = ['authe', 'chat', 'contact', 'file', 'social', 'chart']
   constructor(private router: Router) {
   }
   goto(action, extra = null) {
@@ -19,6 +19,8 @@ export class RouterService {
     }
     else if (action === 'ui') {
       this.router.navigate(['ui']);
+    } else if (action === 'template') {
+      this.router.navigate(['template']);
     }
     // Features Navigation
     else if (this.featureRoute.includes(action)) {

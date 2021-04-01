@@ -24,10 +24,6 @@
                 margin: $elm-margin;
                 .cls-panel-header {
                     margin-bottom: $elm-margin;
-                    img {
-                        width: $img-container-width-s;
-                        height: $img-container-height-s;
-                    }
                     .text {
                         margin-left: $elm-margin;
                         display: flex;
@@ -60,7 +56,7 @@
             width: 90%;
         }
         .actions {
-            margin: $elm-margin;
+            margin: 0 $elm-margin;
             display: flex;
             align-items: center;
         }

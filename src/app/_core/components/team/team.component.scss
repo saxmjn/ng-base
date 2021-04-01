@@ -1,0 +1,34 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/constants.scss';
+
+
+.team-container {
+    .team-heading{
+        text-align: center;
+        margin-bottom: $elm-margin-xl;
+    }
+    .team-list {
+        width: 90%;
+        margin: auto;
+        &__directors {
+            margin-bottom: $elm-margin-xl;
+        }
+        &__members {
+            &-item {
+                margin-bottom: $elm-margin-l;
+                &-element {
+                    img {
+                        margin-bottom: $elm-margin;
+                    }
+                    .text {
+                        margin-bottom: $elm-margin;
+                    }
+                    .actions {
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,18 @@
 @import '../../../../assets/styles/main.scss';
 @import '../../../../assets/styles/constants.scss';
 
-section {
+.template-heading {
+    margin-bottom: $elm-margin-xl;
+    .template-list {
+        margin-left: -$elm-margin;
+        margin-right: -$elm-margin;
+        label {
+            margin: $elm-margin;
+        }
+    }
+}
+
+.elements-container {
     display: flex;
     align-items: center;
     justify-content: center;

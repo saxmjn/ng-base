@@ -7,6 +7,31 @@ section {
     flex-direction: row;
     .col-1 {
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        .editor-container {
+            margin-bottom: $elm-margin-l;
+            .editor {
+                input {
+                    margin-bottom: $elm-margin;
+                }
+                textarea {
+                    margin-bottom: $elm-margin;
+                }
+            }
+            .actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &-medias {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        .posts-container {
+
+        }
     }
     .col-2 {
         width: 40%;
@@ -17,6 +42,9 @@ section {
             margin: 0px auto;
             margin-bottom: $elm-margin-l;
             .activities-card {
+                .activities-header {
+                    margin-bottom: $elm-margin;
+                }
                 .activities-list {
                     li {
                         display: flex;
@@ -42,6 +70,9 @@ section {
             width: 90%;
             margin: 0px auto;
             .friends-card {
+                .friends-header {
+                    margin-bottom: $elm-margin;
+                }
                 .friends-list {
                     li {
                         display: flex;
@@ -58,6 +89,16 @@ section {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
+                            }
+                        }
+                        .actions {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            .actions-follow {
+                                a {
+                                    margin: 0px $elm-margin;
+                                }
                             }
                         }
                     }
