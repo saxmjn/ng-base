@@ -5,8 +5,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: $body-color;
+}
+
 body, button, input, textarea, section{
-    background: $color-body;
     font-family: 'HelveticaNeue', sans-serif !important;
     margin: 0 auto;
 }
@@ -335,6 +338,27 @@ html {
       }
     }
   }
+  .text-1 {
+    font-size: $font-size-xxl
+  }
+  .text-2 {
+    font-size: $font-size-xl
+  }
+  .text-3 {
+    font-size: $font-size-l
+  }
+  .text-4 {
+    font-size: $font-size-m
+  }
+  .text-5 {
+    font-size: $font-size-s
+  }
+  .text-6 {
+    font-size: $font-size-xs
+  }
+  .text-7 {
+    font-size: $font-size-xxs
+  }
 
 /*
 =========================
@@ -599,11 +623,13 @@ ICON
    height: 65%;
    width: 65%;  
   }
-  &:hover {
-    background-color: $icon-container-hover-color;
-    svg {
-      fill: $color-brand;
-    } 
+  .touchable {
+    &:hover {
+      background-color: $icon-container-hover-color;
+      svg {
+        fill: $color-brand;
+      } 
+    }
   }
   &.size-s {
     width: $icon-container-width-s;
@@ -651,6 +677,35 @@ IMAGE
     height: $img-container-height-l;
   }
 }
+
+/*
+=========================
+THUMBNAIL
+=========================
+*/
+
+.cls-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $img-container-width;
+  height: $img-container-height;
+  border-radius: $img-container-border-radius;
+  background-color: $thumbnail-bg-color;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  &.size-s {
+    width: $img-container-width-s;
+    height: $img-container-height-s;
+  }
+  &.size-l {
+    width: $img-container-width-l;
+    height: $img-container-height-l;
+  }
+}
+
+
 
 /*
 =========================

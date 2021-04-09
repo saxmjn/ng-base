@@ -4,10 +4,11 @@
         <p>What do you want to do next with your app?</p>
     </div>
     <div class="template-list flex-row-start">
-        <label class="cls-label touchable" (click)="loadWindow('header')">Header</label>
+        <label class="cls-label touchable" (click)="loadWindow('hero')">Hero</label>
         <label class="cls-label touchable" (click)="loadWindow('features')">Features</label>
+        <label class="cls-label touchable" (click)="loadWindow('gallery')">Gallery</label>
         <label class="cls-label touchable" (click)="loadWindow('pricing')">Pricing</label>
-        <label class="cls-label touchable" (click)="loadWindow('how-it-works')">How It Works</label>
+        <label class="cls-label touchable" (click)="loadWindow('hiw')">How It Works</label>
         <label class="cls-label touchable" (click)="loadWindow('faqs')">Faqs</label>
         <label class="cls-label touchable" (click)="loadWindow('testimonials')">Testimonials</label>
         <label class="cls-label touchable" (click)="loadWindow('team')">Team</label>
@@ -20,30 +21,26 @@
 </section>
 
 <section class="template-browser">
-    <div class="browser">
-        <div class="browser-address-bar">
-            <div class="address-bar__dots">
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-            </div>
-            <div class="address-bar__page">
-                <span>index.html</span>
-            </div>
-            <div class="address-bar__media">
-    
-            </div>
-        </div>
-        <div class="browser-window-box">
-            <div *ngIf="selectedTemplate == 'pricing'">
-                <app-pricing></app-pricing>
-            </div>
-            <div *ngIf="selectedTemplate == 'connect'">
-                <app-connect></app-connect>
-            </div>
-            <div *ngIf="selectedTemplate == 'team'">
-                <app-team></app-team>
-            </div>
-        </div>
+    <div *ngIf="selectedTemplate == 'features'">
+        <app-browser [template]="'features'"></app-browser>
+        <app-browser [template]="'features-2'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'hiw'">
+        <app-browser [template]="'hiw-1'"></app-browser>
+        <app-browser [template]="'hiw-2'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'hero'">
+        <app-browser [template]="'hero-1'"></app-browser>
+        <app-browser [template]="'hero-2'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'newsletter'">
+        <app-browser [template]="'newsletter-1'"></app-browser>
+        <app-browser [template]="'newsletter-2'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'testimonials'">
+        <app-browser [template]="'testimonials-1'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'pricing' || selectedTemplate == 'team' || selectedTemplate == 'connect' || selectedTemplate == 'faqs'">
+        <app-browser [template]="selectedTemplate"></app-browser>
     </div>
 </section>

@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.features-container {
+    width: $section-width;
+    margin: $section-margin auto;
+    .col-1 {
+        .features-heading {
+
+        }
+        .features-list {
+            .features-list-item {
+                margin-bottom: $elm-margin-l;
+                align-items: start;
+                i {
+                    margin-right: $elm-margin-l;
+                }
+            }
+        }
+    }
+    .col-2 {
+        justify-content: center;
+        .thumbnail-container {
+            margin: 0px $elm-margin-l;
+            padding: 0 0px 0px 50px;
+            .features-thumbnail {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}

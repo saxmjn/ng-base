@@ -1,0 +1,36 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.hiw-container {
+    width: $section-width;
+    margin: $section-margin auto;
+    .hiw-heading {
+        text-align: center;
+        margin-bottom: $elm-margin-xl;
+        h2 {
+            margin-top: $elm-margin;
+        }
+    }
+    .hiw-list {
+        .hiw-item {
+            .hiw-card {
+                margin: $elm-margin;
+                padding: $card-padding;
+                border-radius: $card-border-radius;
+                cursor: pointer;
+                box-shadow: 2px 2px 5px #dedede, -2px -2px 5px #fff;
+                &:hover {
+                    box-shadow: 7px 7px 14px #dedede, -7px -7px 14px #fff;
+                }
+                .content {
+                    margin: auto;
+                    text-align: center;
+                    .text-3, i {
+                        margin-bottom: $elm-margin;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

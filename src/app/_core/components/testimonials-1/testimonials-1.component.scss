@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.testimonials-container {
+    width: $section-width;
+    margin: $section-margin auto;
+    .testimonials-heading {
+        text-align: center;
+        margin-bottom: $elm-margin-xxl;
+        h2 {
+            margin-top: $elm-margin;
+        }
+    }
+    .testimonials-content {
+        .col-1 {
+            .thumbnail-container {
+                .thumbnail {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50% 50% 0px 50%;
+                }
+            }
+        }
+        .col-2 {
+            .content {
+                justify-content: center;
+                i {
+                    svg {
+                        width: 150px;
+                        height: 150px;
+                        opacity: 0.25;
+                    }
+                }
+                .title {
+                }
+                span {
+                    display: block;
+                }
+            }   
+        }
+    }
+}

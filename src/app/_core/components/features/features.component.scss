@@ -1,0 +1,33 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.features-container {
+    .features-heading {
+        text-align: center;
+        margin-bottom: $elm-margin-xl;
+    }
+    .features-cards {
+        width: 90%;
+        .feature-item {
+            width: 20%;
+            .feature-box {
+                margin: $elm-margin;
+                padding: $card-padding;
+                border-radius: $card-border-radius;
+                background-color: $color-brand;
+                color: #FFF;
+                cursor: pointer;
+                box-shadow: rgb(0 0 0 / 2%) 0px 0px 1px, rgb(0 0 0 / 2%) 0px 4px 8px, rgb(0 0 0 / 2%) 0px 16px 24px, rgb(0 0 0 / 2%) 0px 24px 32px;
+    
+                .content {
+                    margin: auto;
+                    text-align: center;
+                    .text-3, i {
+                        margin-bottom: $elm-margin;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

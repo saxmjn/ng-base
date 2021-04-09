@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.hiw-container {
+    width: $section-width;
+    margin: $section-margin auto;
+    .col-1, .col-2 {
+        .content {
+            margin: 5px;
+        }
+    }
+    .col-1 {
+    }
+    .col-2 {
+        .hiw-list {
+            padding: 0 0px 0px 50px;
+            .hiw-list-item {
+                flex-wrap: nowrap;
+                align-items: start;
+                margin-bottom: $elm-margin-l;
+                i {
+                    margin-right: $elm-margin;
+                    font-weight: 700;
+                    font-size: $font-size-xxl;
+                }
+                .text {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}

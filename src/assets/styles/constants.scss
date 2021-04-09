@@ -81,6 +81,11 @@ $sidebar-bg-color: $color-brand-tone1;
 $sidebar-hover-color: #0E1F56;
 $sidebar-text-color: #FFF;
 
+
+// Body
+$body-color: #FFF;
+
+
 // Window
 $window-margin-top: $navbar-height;
 $window-margin-bottom: $navbar-height;
@@ -93,6 +98,7 @@ $window-container-width: 90%;
 $section-margin: 30px;
 $div-margin-s: 15px;
 $div-margin: 30px;
+$section-width: 80%;
 
 // Layout
 $layout-padding-s: 5px;
@@ -106,6 +112,7 @@ $elm-margin-s: 5px;
 $elm-margin: 10px;
 $elm-margin-l: 20px;
 $elm-margin-xl: 40px;
+$elm-margin-xxl: 50px;
 
 // Inputs
 $input-height: 30px;
@@ -137,6 +144,7 @@ $panel-padding: 15px;
 
 // Cards
 $card-border-radius: 3px;
+$card-border-radius-l: 5px;
 $card-bg-color: #FFF;
 $card-padding: 20px;
 $card-padding-l: 40px;
@@ -178,7 +186,7 @@ $img-container-border: $border-type-1;
 
 // Thumbnail 
 $thumbnail-border-radius: 5px;
-$thumbnail-bg-color: #efefef;
+$thumbnail-bg-color: $color-brand-tone4;
 
 // Typography
 $font-size-xxl: 24px;
@@ -186,6 +194,8 @@ $font-size-xl: 20px;
 $font-size-l: 18px;
 $font-size-m: 16px;
 $font-size-s: 12px;
+$font-size-xs: 10px;
+$font-size-xxs: 8px;
 $font-weight: 500;
 $font-weight-bold: 700;
 

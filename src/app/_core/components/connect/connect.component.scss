@@ -18,7 +18,9 @@
             justify-content: space-between;
             margin-bottom: $elm-margin-xl;
             &-item {
-
+                i {
+                    margin-bottom: $elm-margin;
+                }
             }
         }
         &__form {

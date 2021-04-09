@@ -1,0 +1,56 @@
+<div class="browser">
+    <div class="browser-address-bar">
+        <div class="address-bar__dots">
+            <span class="dot-1"></span>
+            <span class="dot-2"></span>
+            <span class="dot-3"></span>
+        </div>
+        <div class="address-bar__page">
+            <span>index.html</span>
+        </div>
+        <div class="address-bar__media">
+
+        </div>
+    </div>
+    <div class="browser-window-box">
+        <div *ngIf="template == 'pricing'">
+            <app-pricing></app-pricing>
+        </div>
+        <div *ngIf="template == 'connect'">
+            <app-connect></app-connect>
+        </div>
+        <div *ngIf="template == 'team'">
+            <app-team></app-team>
+        </div>
+        <div *ngIf="template == 'features'">
+            <app-features></app-features>
+        </div>
+        <div *ngIf="template == 'features-2'">
+            <app-features-2></app-features-2>
+        </div>
+        <div *ngIf="template == 'hero-1'">
+            <app-hero-1></app-hero-1>
+        </div>
+        <div *ngIf="template == 'hero-2'">
+            <app-hero-2></app-hero-2>
+        </div>
+        <div *ngIf="template == 'hiw-1'">
+            <app-hiw-1></app-hiw-1>
+        </div>
+        <div *ngIf="template == 'hiw-2'">
+            <app-hiw-2></app-hiw-2>
+        </div>
+        <div *ngIf="template == 'faqs'">
+            <app-faqs></app-faqs>
+        </div>
+        <div *ngIf="template == 'newsletter-1'">
+            <app-newsletter-1></app-newsletter-1>
+        </div>
+        <div *ngIf="template == 'newsletter-2'">
+            <app-newsletter-2></app-newsletter-2>
+        </div>
+        <div *ngIf="template == 'testimonials-1'">
+            <app-testimonials-1></app-testimonials-1>
+        </div>
+    </div>
+</div>
