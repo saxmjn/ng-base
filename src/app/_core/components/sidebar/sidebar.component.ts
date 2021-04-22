@@ -11,11 +11,13 @@ import { RouterService } from 'src/app/_core/services/router.service';
 })
 
 export class SidebarComponent implements OnInit {
+    activeNav: string = '';
     constructor(private router$:RouterService, private router: Router){
     }
     ngOnInit(): void {
     }
     goTo(route){
+        this.activeNav = route;
         this.router$.goto(route)
     }
 }

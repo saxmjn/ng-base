@@ -9,6 +9,23 @@ body {
   background: $body-color;
 }
 
+.window {
+  .window-col-1 {
+    width: $sidebar-width;
+    &__content {
+    }
+  }
+  .window-col-2 {
+      width: $sidebar-widthless;
+      margin-left: $sidebar-width;
+      &__content {
+          width: $window-col2-content-width;
+          padding: $window-col2-content-padding 0px;
+          margin: auto;
+      }
+  }
+}
+
 body, button, input, textarea, section{
     font-family: 'HelveticaNeue', sans-serif !important;
     margin: 0 auto;
@@ -35,19 +52,6 @@ body, button, input, textarea, section{
     padding-top: $navbar-fixed-mob-height;
   }
 }
-
-.icn-1{
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img{
-    max-width: 100%;
-    height: 100%;
-  }
-}
-
 
 /*
 =========================
@@ -169,13 +173,15 @@ MARGINS * PADDINGS
 =========================
 */
 
-.m {
-  &-r-10 {
-    margin-right: 10px;
-  }
-  &-b-20 {
-    margin-bottom: 20px;
-  }
+.padded {
+  &-xxl {padding: $padding-xxl}
+  &-xl {padding: $padding-xl}
+  &-l {padding: $padding-l}
+  &-m {padding: $padding-m}
+  &-s {padding: $padding-s}
+  &-xs {padding: $padding-xs}
+  &-xxs {padding: $padding-xxs}
+  &-null {padding: $padding-null}
 }
 
 /*
@@ -183,9 +189,6 @@ MARGINS * PADDINGS
 TYPOGRAPHY
 =========================
 */
-
-// color: #989898
-// color: 
 
 html {
   // font-size: 62.5%; 
@@ -305,59 +308,14 @@ html {
   ul {
      padding: 0;
   }
-  span, .text {
-    &.size-l {
-      font-size: 16px;
-      font-size: 1.6rem;
-    }
-    &.size-m {
-      font-size: 14px;
-      font-size: 1.4rem;
-    }
-    &.size-s {
-      font-size: 12px;
-      font-size: 1.2rem; 
-    }
-    &.size-xs {
-      font-size: 11px;
-      font-size: 1.1rem; 
-    }
-    &-label-small {
-      font-size: 14px;
-      color: #333;
-      opacity: 0.7;
-      &.block {
-        display: block;
-      }
-    }
-    &-label-upper {
-      text-transform: uppercase;
-      &.size-xs {
-        font-size: 11px;
-        opacity: 0.6;
-      }
-    }
-  }
-  .text-1 {
-    font-size: $font-size-xxl
-  }
-  .text-2 {
-    font-size: $font-size-xl
-  }
-  .text-3 {
-    font-size: $font-size-l
-  }
-  .text-4 {
-    font-size: $font-size-m
-  }
-  .text-5 {
-    font-size: $font-size-s
-  }
-  .text-6 {
-    font-size: $font-size-xs
-  }
-  .text-7 {
-    font-size: $font-size-xxs
+  .text {
+    &-xxl {font-size: $font-size-xxl}
+    &-xl {font-size: $font-size-xl}
+    &-l {font-size: $font-size-l}
+    &-m {font-size: $font-size-m}
+    &-s {font-size: $font-size-s}
+    &-xs {font-size: $font-size-xs}
+    &-xxs {font-size: $font-size-xxs}
   }
 
 /*
@@ -365,8 +323,10 @@ html {
 BUTTONS
 =========================
 */
-.btn-solid-brand, .btn-solid-brand-lighter, .btn-solid-white, .btn-solid-grey, .btn-outline-white, .btn-outline-brand, .btn-outline-grey, .btn-fb, .btn-whatsapp, .btn-icon-text {
-  display: block;
+.btn-solid-brand, .btn-solid-brand-lighter, .btn-solid-white, .btn-solid-grey, .btn-solid-red, .btn-outline-white, .btn-outline-brand, .btn-outline-grey, .btn-fb, .btn-whatsapp, .btn-icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: fit-content;
   transition: .5s all;
   width: fit-content;
@@ -419,8 +379,8 @@ BUTTONS
 }
 
 .btn-solid-brand {
-  border: 1px solid $color-brand;
-  background:$color-brand;
+  border: 1px solid $color-brand-button;
+  background:$color-brand-button;
   color: white;
   opacity: 0.9;
   &:hover {
@@ -429,9 +389,9 @@ BUTTONS
   }
 }
 .btn-solid-brand-lighter {
-  border: 1px solid $color-brand-lighter;
-  background:$color-brand-lighter;
-  color: $color-brand;
+  border: 1px solid $color-brand-button-light;
+  background:$color-brand-button-light;
+  color: $color-brand-button-light-text;
   opacity: 0.9;
   font-weight: 600;
   &:hover {
@@ -457,6 +417,10 @@ BUTTONS
   &:hover {
     color: $color-brand;
   }
+}
+.btn-solid-red {
+  background-color: #ee5252;
+  color: #FFF;
 }
 .btn-outline-white{
   border: 1px solid #efefef;
@@ -491,9 +455,9 @@ BUTTONS
   }
 }
 .btn-outline-brand{
-  border: 1px solid $color-brand;
+  border: 1px solid $color-brand-button;
   background: transparent;
-  color: $color-brand;
+  color: $color-brand-text;
   opacity: 0.8;
   &:hover {
     opacity: 1;
@@ -501,7 +465,7 @@ BUTTONS
   &.hover-solid {
     &:hover {
       opacity: 1;
-      background:$color-brand;
+      background:$color-brand-button-hover;
       color: white;
     }
   }
@@ -595,15 +559,88 @@ LABEL
 .cls-label {
   padding: $label-padding-vertical $label-padding-horizontal;
   border-radius: $label-border-radius;
-  background-color: $label-bg-color;
-  color: $lable-text-color;
+  background: $color-brand-label;
+  color: $color-brand-label-text;
+  &.active {
+    background: $color-brand-label-hover;
+    color: $color-brand-label-hover-text;
+  }
   &.touchable {
     cursor: pointer;
     &:hover {
-
+      background: $color-brand-label-hover;
+      color: $color-brand-label-hover-text;
     }
   }
+  .size-m {
+    padding: $label-padding-vertical-m $label-padding-horizontal-m;
+    font-size: $font-size-m;
+  }
+  .size-l {
+    padding: $label-padding-vertical-l $label-padding-horizontal-l;
+    font-size: $font-size-l;
+  }
 }
+
+/*
+=========================
+DROPDOWN
+=========================
+*/
+
+.cls-dropdown-wrapper {
+  .cls-dropdown-button {
+      background-color: $dropdown-bg;
+      border-radius: $dropdown-border-radius;
+      border: $dropdown-border;
+      box-shadow: $dropdown-shadow; 
+      min-width: 250px;
+      width: fit-content;
+      padding: 15px 15px;
+      margin-bottom: 1px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+  }
+  .cls-dropdown-list {
+      background-color: #fff;
+      border-radius: $dropdown-list-border-radius;
+      box-shadow: $dropdown-list-shadow; 
+      min-width: 250px;
+      display: none;
+      position: absolute;
+      z-index: 2;
+      &.open {
+          display: flex;
+          flex-direction: column;
+      }
+      li {
+          list-style: none;
+          padding: 15px 15px;
+          border-bottom: 1px solid #efefef;
+          border-bottom-left-radius: 4;
+          border-bottom-right-radius: 4;
+          cursor: pointer;
+          font-size: 14px;
+          background: #FFF;
+          opacity: 0.7;
+          box-shadow: 0 10px 40px 0 rgba(12,20,39,.1); 
+          &:hover {
+              opacity: 1;
+              // background: $color-hover-brand;
+          }
+      }
+  }
+  &:hover .cls-dropdown-button {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  &:hover .cls-dropdown-list {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
 
 /*
 =========================
@@ -623,7 +660,7 @@ ICON
    height: 65%;
    width: 65%;  
   }
-  .touchable {
+  &.touchable {
     &:hover {
       background-color: $icon-container-hover-color;
       svg {
@@ -642,17 +679,13 @@ ICON
 }
 
 .cls-icon-brand {
-  background-color: $color-brand-tone4;
+  background-color: $color-brand-icon-box;
   &:hover {
-    background-color: $icon-container-hover-color;
+    background-color: $color-brand-icon-box-hover;
     svg {
       fill: #FFF;
     }
   }
-}
-
-.cls-icon-grey {
-  background-color: $color-brand-tone5;
 }
 
 /*
@@ -675,6 +708,10 @@ IMAGE
   &.size-l {
     width: $img-container-width-l;
     height: $img-container-height-l;
+  }
+  &.size-xl {
+    width: $img-container-width-xl;
+    height: $img-container-height-xl;
   }
 }
 
@@ -1196,6 +1233,13 @@ PANEL
     flex-direction: row;
     align-items: center;
   }
+  &.padded-xxl { padding: $padding-xxl};
+  &.padded-xl { padding: $padding-xl};
+  &.padded-l { padding: $padding-l};
+  &.padded-m { padding: $padding-m};
+  &.padded-s { padding: $padding-s};
+  &.padded-xs { padding: $padding-xs};
+  &.padded-xxs { padding: $padding-xxs};
 }
 
 
@@ -1214,6 +1258,13 @@ CARDS
   &.bordered {
     border: $card-border;
   }
+  &.padded-xxl { padding: $padding-xxl};
+  &.padded-xl { padding: $padding-xl};
+  &.padded-l { padding: $padding-l};
+  &.padded-m { padding: $padding-m};
+  &.padded-s { padding: $padding-s};
+  &.padded-xs { padding: $padding-xs};
+  &.padded-xxs { padding: $padding-xxs};
   &-header, &-footer {
     display: flex;
     flex-direction: row;
@@ -1257,7 +1308,7 @@ CARDS
     }
   }
   &-juvi {
-      background-color: $color-brand-tone4;
+      background-color: $color-brand-bg-dark;
   }
   &-mint {
       justify-content: center;
@@ -1270,7 +1321,7 @@ CARDS
           align-items: center;
           width: $img-container-width;
           height: $img-container-height;
-          background: $color-brand-tone4;
+          background: $color-brand-icon-box;
           margin: auto;
           img {
               width: 100%;
@@ -1709,32 +1760,4 @@ PLACEHOLDER
     100% {
         background-color: rgba(165, 165, 165, 0.1)
     }
-}
-
-
-
-/*
-=========================
-SPACING
-=========================
-*/
-.no-padded {
-  padding: 0;
-}
-
-.m-t {
-  &-10 {
-    margin-top: 10px;
-  }
-  &-20 {
-    margin-top: 20px;
-  }
-  &-30 {
-    margin-top: 30px;
-  }
-}
-.m-b {
-  &-0 {
-    margin-bottom: 0 im !important;
-  }
 }

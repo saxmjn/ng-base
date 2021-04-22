@@ -1,0 +1,12 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+.hero-container {
+    width: $section-width;
+    margin: $section-margin auto;
+    .col-1, .col-2 {
+        .content {
+            margin: 5px;
+        }
+    }
+}

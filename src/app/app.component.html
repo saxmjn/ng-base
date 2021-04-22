@@ -1,13 +1,12 @@
-<app-navbar></app-navbar>
-<div class="body-container">
-    <div class="col-1">
-        <app-sidebar></app-sidebar>
+<div class="window">
+    <div class="window-col-1">
+        <div class="window-col-1__content">
+            <app-sidebar></app-sidebar>
+        </div>
     </div>
-    <div class="col-2">
-        <div class="window">
-            <div class="window-container">
-                <router-outlet></router-outlet>
-            </div>
+    <div class="window-col-2">
+        <div class="window-col-2__content">
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>

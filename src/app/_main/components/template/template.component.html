@@ -4,19 +4,19 @@
         <p>What do you want to do next with your app?</p>
     </div>
     <div class="template-list flex-row-start">
-        <label class="cls-label touchable" (click)="loadWindow('hero')">Hero</label>
-        <label class="cls-label touchable" (click)="loadWindow('features')">Features</label>
-        <label class="cls-label touchable" (click)="loadWindow('gallery')">Gallery</label>
-        <label class="cls-label touchable" (click)="loadWindow('pricing')">Pricing</label>
-        <label class="cls-label touchable" (click)="loadWindow('hiw')">How It Works</label>
-        <label class="cls-label touchable" (click)="loadWindow('faqs')">Faqs</label>
-        <label class="cls-label touchable" (click)="loadWindow('testimonials')">Testimonials</label>
-        <label class="cls-label touchable" (click)="loadWindow('team')">Team</label>
-        <label class="cls-label touchable" (click)="loadWindow('newsletter')">Newsletter</label>
-        <label class="cls-label touchable" (click)="loadWindow('connect')">Contact</label>
-        <label class="cls-label touchable" (click)="loadWindow('call-to-action')">Call to action</label>
-        <label class="cls-label touchable" (click)="loadWindow('http-codes')">HTTP Codes</label>
-        <label class="cls-label touchable" (click)="loadWindow('footers')">Footers</label>
+        <label class="cls-label touchable" (click)="loadWindow('hero')" [ngClass]="{'active': selectedTemplate == 'hero'}">Hero</label>
+        <label class="cls-label touchable" (click)="loadWindow('features')" [ngClass]="{'active': selectedTemplate == 'features'}">Features</label>
+        <label class="cls-label touchable" (click)="loadWindow('gallery')" [ngClass]="{'active': selectedTemplate == 'gallery'}">Gallery</label>
+        <label class="cls-label touchable" (click)="loadWindow('pricing')" [ngClass]="{'active': selectedTemplate == 'pricing'}">Pricing</label>
+        <label class="cls-label touchable" (click)="loadWindow('hiw')" [ngClass]="{'active': selectedTemplate == 'hiw'}">How It Works</label>
+        <label class="cls-label touchable" (click)="loadWindow('faqs')" [ngClass]="{'active': selectedTemplate == 'faqs'}">Faqs</label>
+        <label class="cls-label touchable" (click)="loadWindow('testimonials')" [ngClass]="{'active': selectedTemplate == 'testimonials'}">Testimonials</label>
+        <label class="cls-label touchable" (click)="loadWindow('team')" [ngClass]="{'active': selectedTemplate == 'team'}">Team</label>
+        <label class="cls-label touchable" (click)="loadWindow('newsletter')" [ngClass]="{'active': selectedTemplate == 'newsletter'}">Newsletter</label>
+        <label class="cls-label touchable" (click)="loadWindow('connect')" [ngClass]="{'active': selectedTemplate == 'connect'}">Contact</label>
+        <label class="cls-label touchable" (click)="loadWindow('call-to-action')" [ngClass]="{'active': selectedTemplate == 'call-to-action'}">Call to action</label>
+        <label class="cls-label touchable" (click)="loadWindow('http-codes')" [ngClass]="{'active': selectedTemplate == 'http-codes'}">HTTP Codes</label>
+        <label class="cls-label touchable" (click)="loadWindow('footers')" [ngClass]="{'active': selectedTemplate == 'footers'}">Footers</label>
     </div>
 </section>
 
@@ -32,6 +32,10 @@
     <div *ngIf="selectedTemplate == 'hero'">
         <app-browser [template]="'hero-1'"></app-browser>
         <app-browser [template]="'hero-2'"></app-browser>
+    </div>
+    <div *ngIf="selectedTemplate == 'gallery'">
+        <app-browser [template]="'gallery-1'"></app-browser>
+        <app-browser [template]="'gallery-2'"></app-browser>
     </div>
     <div *ngIf="selectedTemplate == 'newsletter'">
         <app-browser [template]="'newsletter-1'"></app-browser>

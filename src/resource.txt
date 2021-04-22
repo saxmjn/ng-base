@@ -1,0 +1,8 @@
+Modals
+https://codepen.io/knyttneve/pen/dgoWyE
+https://codepen.io/ainalem/pen/RqYZNO?editors=1100
+https://css-tricks.com/considerations-styling-modal/
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal
+
+Gallery
+https://codepen.io/rokobuljan/pen/XXzqKQ

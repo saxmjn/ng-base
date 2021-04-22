@@ -1,0 +1,23 @@
+<div class="slider">
+    <s id="s1"></s> 
+    <s id="s2"></s>
+    <s id="s3"></s>
+    <s id="s4"></s>
+    <div class="slides flex-row-center">
+        <div *ngFor="let item of gallery" class="slides-item" [style.background-image]="'url('+item.src+')'">
+            <h3>Content to Link</h3>
+        </div>
+    </div>
+    <div class="prevNext">
+        <div><a href="#s4" pageScroll pageScrollTarget="#s4"></a><a href="#s2" pageScroll></a></div>
+        <div><a href="#s1" pageScroll></a><a href="#s3" pageScroll></a></div>
+        <div><a href="#s2" pageScroll></a><a href="#s4" pageScroll></a></div>
+        <div><a href="#s3" pageScroll></a><a href="#s1" pageScroll></a></div>
+     </div>
+     <div class="bullets">
+        <a href="#s1" pageScroll>1</a>
+        <a href="#s2" pageScroll>2</a>
+        <a href="#s3" pageScroll>3</a>
+        <a href="#s4" pageScroll>4</a>
+      </div>
+</div>

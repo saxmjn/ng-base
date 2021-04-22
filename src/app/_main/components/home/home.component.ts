@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
         {svg: ``, title: 'Ecommerce', route: 'ecommerce'},
         {svg: '', title: 'Social', route: 'social'},
         {svg: '', title: 'File Box', route: 'file'},
-        {svg: '', title: 'Chart', route: 'chart'},];
+        {svg: '', title: 'Chart', route: 'chart'},
+        {svg: '', title: 'Stream', route: 'stream'},];
     constructor(private router$:RouterService){
     }
     ngOnInit() {

@@ -6,6 +6,8 @@ import {RouterModule} from '@angular/router';
 //Video Player
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+//
 import { DatetimeComponent } from './datetime/datetime.component';
 import { AlertComponent } from './alert/alert.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -24,10 +26,12 @@ import { HIW2Component } from './hiw-2/hiw-2.component';
 import { Hero1Component } from './hero-1/hero-1.component';
 import { Hero2Component } from './hero-2/hero-2.component';
 import { Testimonials1Component } from './testimonials-1/testimonials-1.component';
+import { Gallery1Component } from './gallery-1/gallery-1.component';
+import { Gallery2Component } from './gallery-2/gallery-2.component';
 @NgModule({
     imports: [CommonModule, HttpClientModule, FormsModule, RouterModule,
     //
-    BrowserModule, BrowserAnimationsModule,
+    BrowserModule, BrowserAnimationsModule, NgxPageScrollModule,
 ],
     declarations: [
        BrowserComponent,
@@ -47,7 +51,9 @@ import { Testimonials1Component } from './testimonials-1/testimonials-1.componen
        FaqsComponent,
        Newsletter1Component,
        Newsletter2Component,
-       Testimonials1Component
+       Testimonials1Component,
+       Gallery1Component,
+       Gallery2Component
     ],
     exports: [
         //Modules
@@ -70,7 +76,9 @@ import { Testimonials1Component } from './testimonials-1/testimonials-1.componen
         FaqsComponent,
         Newsletter1Component,
         Newsletter2Component,
-        Testimonials1Component
+        Testimonials1Component,
+        Gallery1Component,
+        Gallery2Component
     ]
 })
 

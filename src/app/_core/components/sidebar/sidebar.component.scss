@@ -8,25 +8,47 @@
     height: 100vh;
     width: $sidebar-width;
     position: fixed;
-    border-right: $border-type-1;
+    border-right: $sidebar-border;
     z-index: 100;
     margin-top: $sidebar-margin-top;
     color: $sidebar-text-color;
     .header {
+        margin-bottom: $sidebar-header-mb;
         .branding {
             padding: $sidebar-padding;
+        }
+        .profile {
+            &-thumbnail {
+                margin-bottom: $elm-margin-l;
+            }
+            &-text {
+                margin-bottom: $elm-margin-l;
+            }
+            &-actions {
+                a {
+                    margin: 0px $elm-margin-s;
+                }
+            }
         }
     }
     .navigation {
         list-style: none;
+        width: $sidebar-nav-width;
+        margin: auto;
         li {
             display: flex;
             height: $sidebar-nav-height;
             cursor: pointer;
             padding: $sidebar-padding;
             align-items: center;
+            border-radius: $sidebar-nav-item-border-radius;
+            font-weight: 700;
+            &.active {
+                background-color: $sidebar-nav-item-hover-color;
+                color: $sidebar-nav-item-hover-color-text
+            }
             &:hover {
-                background-color: $sidebar-hover-color;
+                background-color: $sidebar-nav-item-hover-color;
             }
             i {
                 margin: auto $elm-margin;

@@ -1,3 +1,36 @@
+// Color for Brand
+$color-brand: #0C1944;
+$color-brand-active: #333CCC;
+$color-brand-bg-dark: #0C1944;
+$color-brand-bg-light: #D1D2F8;
+$color-brand-button: #333CCC;
+$color-brand-button-text: #FFF;
+$color-brand-button-hover: null;
+$color-brand-button-hover-text: null;
+$color-brand-button-light: #333CCC;
+$color-brand-button-light-text: #FFF;
+$color-brand-button-light-hover: null;
+$color-brand-button-light-hover-text: null;
+$color-brand-label: #D1D2F8;
+$color-brand-label-text: #FFF;
+$color-brand-label-hover: #333CCC;
+$color-brand-label-hover-text:#D1D2F8;
+$color-brand-text: #333CCC;
+$color-brand-icon-box: null;
+$color-brand-icon-box-hover: null;
+$color-brand-icon: null;
+$color-brand-icon-hover: null;
+$color-brand-sidebar: null;
+$color-brand-navbar: null;
+$color-brand-navbar-text: null;
+$color-brand-sidebar-nav: null;
+$color-brand-sidebar-nav-hover: null;
+$color-brand-sidebar-nav-hover-text: null;
+$color-brand-list: null;
+$color-brand-list-hover: null;
+$color-brand-list-hover-text: null;
+$color-brand-card: #FFF;
+
 //
 $color-p-dark: #000000;
 $color-p-normal: #000000;
@@ -21,33 +54,16 @@ $color-grey-blue-light: #f4f7fb;
 $color-white: #ffffff;
 $color-white-light: #fafafa;
 
-//
 
-$color-brand-tone1: #0C1944;
-$color-brand-tone3: #D1D2F8;
-$color-brand-tone4: #e9edfe; 
-$color-brand-tone5: #edeff2; 
-$color-brand-tone6: #cb385a;
-$color-brand-tone7: #cb0039;
-$color-brand-tone8: #8F0012;
-
-//
-$color-brand-lighter: $color-brand-tone4;
-$color-brand-light:$color-brand-tone3;
-$color-brand: $color-brand-tone1;
-$color-brand-dark: #8F0012;
-
-$color-icon: #FFDA44;
-
-$borrowed-grey: #f5f6fa;
-
-$color-grey-background: #f2f4f7;
-
-// $gradient-background:#16a5c8;
-$gradient-background:#fff;
-$button-color: #1a1d20;
-
-
+// Paddings
+$padding-xxl: 60px;
+$padding-xl: 50px;
+$padding-l: 40px;
+$padding-m: 20px;
+$padding-s: 15px;
+$padding-xs: 10px;
+$padding-xxs: 5px;
+$padding-null: 0px;
 
 // Shadow
 $shadow-1: 1px 1px 10px -1px rgba(0, 0, 0, 0.1);
@@ -72,13 +88,18 @@ $navbar-margin-left: 0;
 $navbar-bg-color: #FFF;
 
 // Sidebar
+$sidebar-bg-color: $color-brand-bg-dark;
 $sidebar-width: 20%;
 $sidebar-margin-top: 0;
 $sidebar-widthless: 80%;
 $sidebar-padding: 10px;
+$sidebar-border: 0px;
+$sidebar-header-mb: 30px;
 $sidebar-nav-height: 40px;
-$sidebar-bg-color: $color-brand-tone1;
-$sidebar-hover-color: #0E1F56;
+$sidebar-nav-width: 80%;
+$sidebar-nav-item-border-radius: 4px;
+$sidebar-nav-item-hover-color: #333CCC;
+$sidebar-nav-item-hover-color-text: #FFF;
 $sidebar-text-color: #FFF;
 
 
@@ -92,10 +113,17 @@ $window-margin-bottom: $navbar-height;
 $window-margin-left: 0;
 $window-padding: 10px;
 $window-container-margin-top: 50px;
-$window-container-width: 90%; 
+$window-container-width: 100%;
+$window-col1-content-width: 85%;
+$window-col2-content-width: 85%;
+$window-col2-content-padding: 50px;
+
 
 // Section
 $section-margin: 30px;
+$section-margin-l: 60px;
+$section-padding: 30px;
+$section-padding-l: 60px;
 $div-margin-s: 15px;
 $div-margin: 30px;
 $section-width: 80%;
@@ -133,6 +161,15 @@ $button-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 $button-margin-bottom: 10px;
 $button-padding: 15px;
 
+// Dropdown
+$dropdown-bg: #FFF;
+$dropdown-border: 2px solid rgba(34,34,34,.05);
+$dropdown-shadow: 0 10px 40px 0 rgba(12,20,39,.1);
+$dropdown-border-radius: 4px;
+$dropdown-list-shadow: 0 10px 40px 0 rgb(12 20 39 / 10%);
+$dropdown-list-border-radius: 4px;
+
+
 // Panel
 $panel-border-radius: 3px;
 $panel-bg-color: #FFF;
@@ -145,7 +182,7 @@ $panel-padding: 15px;
 // Cards
 $card-border-radius: 3px;
 $card-border-radius-l: 5px;
-$card-bg-color: #FFF;
+$card-bg-color: $color-brand-card;
 $card-padding: 20px;
 $card-padding-l: 40px;
 $card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -155,10 +192,14 @@ $card-padding: 15px;
 
 // Labels
 $label-border-radius: 5px;
-$label-bg-color: $color-brand-tone4;
-$lable-text-color: $color-brand-tone1;
+$label-bg-color: $color-brand-bg-light;
+$label-text-color: $color-brand-active;
 $label-padding-horizontal: 10px;
+$label-padding-horizontal-m: 20px;
+$label-padding-horizontal-l: 30px;
 $label-padding-vertical: 5px;
+$label-padding-vertical-m: 10px;
+$label-padding-vertical-l: 20px;
 
 // Icons
 $icon-container-border-radius: 5px;
@@ -169,7 +210,7 @@ $icon-container-height-s: 25px;
 $icon-container-width-l: 55px;
 $icon-container-height-l: 55px;
 $icon-container-color: #EFEFEF;
-$icon-container-hover-color: $color-brand-tone4;
+$icon-container-hover-color: $color-brand-icon-box-hover;
 $icon-container-border: $border-type-1;
 $icon-container-shadow: none;
 
@@ -181,12 +222,15 @@ $img-container-width: 50px;
 $img-container-height: 50px;
 $img-container-width-l: 85px;
 $img-container-height-l: 85px;
+$img-container-width-xl: 160px;
+$img-container-height-xl: 160px;
 $img-container-color: #EFEFEF;
 $img-container-border: $border-type-1;
 
 // Thumbnail 
 $thumbnail-border-radius: 5px;
-$thumbnail-bg-color: $color-brand-tone4;
+$thumbnail-bg-color: #F4F4F4;
+$thumbnail-border: 0px;
 
 // Typography
 $font-size-xxl: 24px;

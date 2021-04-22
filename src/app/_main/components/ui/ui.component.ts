@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class UIComponent implements OnInit {
+    activeLabel: string = null;
     constructor(){
     }
     ngOnInit() {

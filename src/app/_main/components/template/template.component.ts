@@ -7,7 +7,7 @@ import { RouterService } from 'src/app/_core/services/router.service';
 })
 
 export class TemplateComponent implements OnInit {
-    selectedTemplate = 'testimonials';
+    selectedTemplate = 'gallery';
     constructor(private router$:RouterService) {
     }
     ngOnInit() {

@@ -57,7 +57,7 @@ $inbox-header-footer: 15%;
                     justify-content: space-between;
                     cursor: pointer;
                     &:hover {
-                        background-color: $color-brand-tone4;
+                        background-color: $color-brand-list;
                     }
                     .profile {
                         display: flex;
@@ -129,7 +129,7 @@ $inbox-header-footer: 15%;
             &-body {
                 height: $inbox-header-body;
                 $shadow-1: 1px 1px 10px -1px rgba(0, 0, 0, 0.1);
-                background-color: $color-brand-tone4;
+                background-color: $color-brand-bg-light;
             }
             &-footer {
                 height: $inbox-header-footer;

@@ -4,7 +4,7 @@
         <p>What do you want to do next with your app?</p>
     </div>
     <div class="template-list flex-row-start">
-        <label class="cls-label touchable" (click)="loadWindow('faqs')">Typography</label>
+        <label class="cls-label touchable" (click)="loadWindow('faqs')" [ngClass]="{'active': activeLabel == 'typography'}">Typography</label>
         <label class="cls-label touchable" (click)="loadWindow('faqs')">Buttons</label>
         <label class="cls-label touchable" (click)="loadWindow('faqs')">Forms</label>
         <label class="cls-label touchable" (click)="loadWindow('faqs')">Cards</label>

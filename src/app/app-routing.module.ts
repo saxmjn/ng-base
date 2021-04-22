@@ -7,6 +7,7 @@ import { ContactComponent } from './_main/components/contact/contact.component';
 import { FileComponent } from './_main/components/file/file.component';
 import { HomeComponent } from './_main/components/home/home.component';
 import { SocialComponent } from './_main/components/social/social.component';
+import { StreamComponent } from './_main/components/stream/stream.component';
 import { TemplateComponent } from './_main/components/template/template.component';
 import { UIComponent } from './_main/components/ui/ui.component';
 
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'chat',
     component: ChatComponent
+  },
+  {
+    path: 'stream',
+    component: StreamComponent
   },
   {
     path: 'chart',
