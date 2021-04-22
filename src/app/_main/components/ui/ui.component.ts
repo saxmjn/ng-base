@@ -11,4 +11,7 @@ export class UIComponent implements OnInit {
     }
     ngOnInit() {
     }
+    loadWindow (value) {
+
+    }
 }
