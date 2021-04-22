@@ -30,7 +30,10 @@
     "ngx-page-scroll-core": "^7.0.4",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "express": "^4.17.1",
+    "express-x-hub": "^1.0.4",
+    "@nguniversal/express-engine": "^8.2.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.21",
