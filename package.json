@@ -33,7 +33,8 @@
     "zone.js": "~0.9.1",
     "express": "^4.17.1",
     "express-x-hub": "^1.0.4",
-    "@nguniversal/express-engine": "^8.2.6"
+    "@nguniversal/express-engine": "^8.2.6",
+    "axios": "^0.19.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.21",

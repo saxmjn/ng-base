@@ -224,26 +224,15 @@ html {
   
   h1, h2, h3, h4, h5, h6, p, span, .text {
     margin-top: 0;
-    &.cl-light {
-      color: #989898
+    &.text-cl{
+      &-light{color: #989898}
+      &-normal{color: #637178}
+      &-dark{color: #0f0f0f}
+      &-brand{color: $color-brand;}
     }
-    &.cl-normal {
-      color: #637178
-    }
-    &.cl-dark {
-      color: #0f0f0f
-    }
-    &.cl-brand {
-      color: $color-brand;
-    }
-    &.wt-normal {
-      font-weight: 300;
-    }
-    &.wt-bold {
-      font-weight: 500;;
-    }
-    &.wt-bolder {
-      font-weight: 700;
+    &.text-wt {
+      &-bold {font-weight: 500;;}
+      &-bolder {font-weight: 700;}
     }
   }
 
@@ -651,8 +640,8 @@ ICON
   display: flex;
   justify-content: center;
   align-items: center;
-  width: $icon-container-width;
-  height: $icon-container-height;
+  width: $icon-container-m;
+  height: $icon-container-m;
   border-radius: $icon-container-border-radius;
   box-shadow: $icon-container-shadow;
   cursor: pointer;
@@ -669,12 +658,16 @@ ICON
     }
   }
   &.size-s {
-    width: $icon-container-width-s;
-    height: $icon-container-height-s;
+    width: $icon-container-s;
+    height: $icon-container-s;
   }
   &.size-l {
-    width: $icon-container-width-l;
-    height: $icon-container-height-l;
+    width: $icon-container-l;
+    height: $icon-container-l;
+  }
+  &.size-xl {
+    width: $icon-container-xl;
+    height: $icon-container-xl;
   }
 }
 

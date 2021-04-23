@@ -4,16 +4,17 @@
 @import '../../../../assets/styles/main.scss';
 
 .sidebar {
-    background: $sidebar-bg-color;
+    background: $color-brand-sidebar;
     height: 100vh;
     width: $sidebar-width;
     position: fixed;
     border-right: $sidebar-border;
     z-index: 100;
     margin-top: $sidebar-margin-top;
-    color: $sidebar-text-color;
+    color: $color-brand-sidebar-text;
     .header {
-        margin-bottom: $sidebar-header-mb;
+        width: $sidebar-header-width;
+        margin: $sidebar-header-margin auto;
         .branding {
             padding: $sidebar-padding;
         }
@@ -40,15 +41,18 @@
             height: $sidebar-nav-height;
             cursor: pointer;
             padding: $sidebar-padding;
+            margin-bottom: $elm-margin;
             align-items: center;
             border-radius: $sidebar-nav-item-border-radius;
             font-weight: 700;
-            &.active {
-                background-color: $sidebar-nav-item-hover-color;
-                color: $sidebar-nav-item-hover-color-text
-            }
             &:hover {
-                background-color: $sidebar-nav-item-hover-color;
+                background-color: $color-brand-sidebar-nav-hover;
+            }
+            &.selected {
+                background-color: $color-brand-sidebar-nav-selected;
+                &:hover {
+                    background-color: $color-brand-sidebar-nav-selected;
+                }
             }
             i {
                 margin: auto $elm-margin;

@@ -6,3 +6,26 @@ https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal
 
 Gallery
 https://codepen.io/rokobuljan/pen/XXzqKQ
+
+Dashboard
+https://codepen.io/TurkAysenur/pen/NWRqoyL
+https://codepen.io/aybukeceylan/pen/OJRNbZp
+https://codepen.io/dev_loop/pen/vYYxvbz
+https://codepen.io/TurkAysenur/pen/LYRKpWe
+https://codepen.io/TurkAysenur/full/ZEpxeYm
+
+
+Payment
+https://codepen.io/JavaScriptJunkie/pen/YzzNGeR
+
+ToDo
+https://codepen.io/milanraring/pen/QWbqBGo
+
+Carousal
+https://codepen.io/edmundojr/details/qdLWWx
+
+Button
+https://codepen.io/andytran/pen/vLNGvN
+
+DropDown
+https://codepen.io/jcoulterdesign/pen/qdWxEm

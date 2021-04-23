@@ -62,8 +62,8 @@ $inbox-header-footer: 15%;
                     .profile {
                         display: flex;
                         img {
-                            width: $icon-container-width;
-                            height: $icon-container-height;
+                            width: $icon-container-m;
+                            height: $icon-container-m;
                             border-radius: $icon-container-border-radius;
                             border: $icon-container-border;
                             margin: auto $elm-margin;

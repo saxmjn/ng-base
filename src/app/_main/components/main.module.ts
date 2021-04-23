@@ -8,7 +8,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { CoreModule } from 'src/app/_core/components/core.module';
-import { HomeComponent } from './home/home.component';
+import { FeaturesComponent } from './features/features.component';
 import { UIComponent } from './ui/ui.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ChatComponent } from './chat/chat.component';
@@ -27,7 +27,7 @@ import { StreamComponent } from './stream/stream.component';
     InlineSVGModule,
 ],
     declarations: [
-        AuthComponent, HomeComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent, ChartComponent, TemplateComponent, StreamComponent
+        AuthComponent, FeaturesComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent, ChartComponent, TemplateComponent, StreamComponent
     ],
     exports: [
         //Modules

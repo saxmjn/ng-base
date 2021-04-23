@@ -5,7 +5,7 @@ import { ChartComponent } from './_main/components/chart/chart.component';
 import { ChatComponent } from './_main/components/chat/chat.component';
 import { ContactComponent } from './_main/components/contact/contact.component';
 import { FileComponent } from './_main/components/file/file.component';
-import { HomeComponent } from './_main/components/home/home.component';
+import { FeaturesComponent } from './_main/components/features/features.component';
 import { SocialComponent } from './_main/components/social/social.component';
 import { StreamComponent } from './_main/components/stream/stream.component';
 import { TemplateComponent } from './_main/components/template/template.component';
@@ -14,7 +14,7 @@ import { UIComponent } from './_main/components/ui/ui.component';
 const routes: Routes = [
   {
     path: 'features',
-    component: HomeComponent
+    component: FeaturesComponent
   },
   {
     path: 'authe',
