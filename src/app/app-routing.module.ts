@@ -10,8 +10,13 @@ import { SocialComponent } from './_main/components/social/social.component';
 import { StreamComponent } from './_main/components/stream/stream.component';
 import { TemplateComponent } from './_main/components/template/template.component';
 import { UIComponent } from './_main/components/ui/ui.component';
+import { HomeComponent } from './_main/components/home/home.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'features',
     component: FeaturesComponent

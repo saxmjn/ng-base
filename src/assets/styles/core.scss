@@ -647,7 +647,11 @@ ICON
   cursor: pointer;
   svg {
    height: 65%;
-   width: 65%;  
+   width: 65%;
+   fill: #333CCC;
+  }
+  &.cls-icon-boxed {
+    background-color: $icon-container-color;
   }
   &.touchable {
     &:hover {
@@ -1214,13 +1218,13 @@ PANEL
 =========================
 */
 .cls-panel {
-  background-color: $panel-bg-color;
+  background-color: $color-brand-panel-background;
   border-radius: $panel-border-radius;
+  border: $panel-border;
   cursor: pointer;
   width: auto;
   padding: $panel-padding;
   box-shadow: $panel-shadow;
-  border: $panel-border;
   &-header, &-footer {
     display: flex;
     flex-direction: row;

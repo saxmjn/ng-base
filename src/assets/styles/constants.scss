@@ -16,7 +16,7 @@ $color-brand-label-text: #FFF;
 $color-brand-label-hover: #333CCC;
 $color-brand-label-hover-text:#D1D2F8;
 $color-brand-text: #333CCC;
-$color-brand-icon-box: null;
+$color-brand-icon-box: #ebecfa;
 $color-brand-icon-box-hover: null;
 $color-brand-icon: null;
 $color-brand-icon-hover: null;
@@ -31,6 +31,8 @@ $color-brand-list: null;
 $color-brand-list-hover: null;
 $color-brand-list-hover-text: null;
 $color-brand-card: #FFF;
+$color-brand-panel-border: #333CCC;
+$color-brand-panel-background: #ebecfa;
 
 //
 $color-p-dark: #000000;
@@ -170,11 +172,10 @@ $dropdown-list-border-radius: 4px;
 
 // Panel
 $panel-border-radius: 3px;
-$panel-bg-color: #FFF;
 $panel-padding: 20px;
 $panel-shadow: none;
 $panel-margin: 0;
-$panel-border: 1px solid #efefef;
+$panel-border: 1px solid $color-brand-panel-border;
 $panel-padding: 15px;
 
 // Cards
@@ -206,7 +207,7 @@ $icon-container-s: 25px;
 $icon-container-s: 25px;
 $icon-container-l: 55px;
 $icon-container-xl: 75px;
-$icon-container-color: #1a1818;
+$icon-container-color: $color-brand-icon-box;
 $icon-container-hover-color: $color-brand-icon-box-hover;
 $icon-container-border: $border-type-1;
 $icon-container-shadow: none;

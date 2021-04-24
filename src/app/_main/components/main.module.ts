@@ -18,6 +18,7 @@ import { SocialComponent } from './social/social.component';
 import { ChartComponent } from './chart/chart.component';
 import { TemplateComponent } from './template/template.component';
 import { StreamComponent } from './stream/stream.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     imports: [CommonModule, HttpClientModule, FormsModule, RouterModule, CoreModule,
@@ -27,7 +28,7 @@ import { StreamComponent } from './stream/stream.component';
     InlineSVGModule,
 ],
     declarations: [
-        AuthComponent, FeaturesComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent, ChartComponent, TemplateComponent, StreamComponent
+        HomeComponent, AuthComponent, FeaturesComponent, UIComponent, ChatComponent, ContactComponent, FileComponent, SocialComponent, ChartComponent, TemplateComponent, StreamComponent
     ],
     exports: [
         //Modules

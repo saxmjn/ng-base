@@ -12,7 +12,7 @@ export class RouterService {
   goto(action, extra = null) {
     // Sidebar Navigation
     if (action === 'home') {
-      this.router.navigate(['home']);
+      this.router.navigate(['']);
     }
     else if (action === 'features') {
       this.router.navigate(['features']);

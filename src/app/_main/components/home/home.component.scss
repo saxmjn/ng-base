@@ -1,0 +1,17 @@
+@import '../../../../assets/styles/core.scss';
+@import '../../../../assets/styles/constants.scss';
+
+
+.home {
+    &-heading {
+        margin-bottom: $elm-margin-xl;
+        p {
+            line-height: 1.7;
+        }
+    }
+    &-code {
+        .code-panel {
+            margin-bottom: $elm-margin-l;
+        }
+    }
+}
