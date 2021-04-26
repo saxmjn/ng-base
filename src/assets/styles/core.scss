@@ -173,6 +173,49 @@ MARGINS * PADDINGS
 =========================
 */
 
+.margin {
+  &-xxl {margin: $margin-xxl}
+  &-xl {margin: $margin-xl}
+  &-l {margin: $margin-l}
+  &-m {margin: $margin-m}
+  &-s {margin: $margin-s}
+  &-xs {margin: $margin-xs}
+  &-xxs {margin: $margin-xxs}
+  &-null {margin: $margin-null}
+  &-t-xxl {margin-top: $margin-xxl}
+  &-t-xl {margin-top: $margin-xl}
+  &-t-l {margin-top: $margin-l}
+  &-t-m {margin-top: $margin-m}
+  &-t-s {margin-top: $margin-s}
+  &-t-xs {margin-top: $margin-xs}
+  &-t-xxs {margin-top: $margin-xxs}
+  &-t-null {margin-top: $margin-null}
+  &-b-xxl {margin-bottom: $margin-xxl}
+  &-b-xl {margin-bottom: $margin-xl}
+  &-b-l {margin-bottom: $margin-l}
+  &-b-m {margin-bottom: $margin-m}
+  &-b-s {margin-bottom: $margin-s}
+  &-b-xs {margin-bottom: $margin-xs}
+  &-b-xxs {margin-bottom: $margin-xxs}
+  &-b-null {margin-bottom: $margin-null}
+  &-l-xxl {margin-left: $margin-xxl}
+  &-l-xl {margin-left: $margin-xl}
+  &-l-l {margin-left: $margin-l}
+  &-l-m {margin-left: $margin-m}
+  &-l-s {margin-left: $margin-s}
+  &-l-xs {margin-left: $margin-xs}
+  &-l-xxs {margin-left: $margin-xxs}
+  &-l-null {margin-left: $margin-null}
+  &-r-xxl {margin-right: $margin-xxl}
+  &-r-xl {margin-right: $margin-xl}
+  &-r-l {margin-right: $margin-l}
+  &-r-m {margin-right: $margin-m}
+  &-r-s {margin-right: $margin-s}
+  &-r-xs {margin-right: $margin-xs}
+  &-r-xxs {margin-right: $margin-xxs}
+  &-r-null {margin-right: $margin-null}
+}
+
 .padded {
   &-xxl {padding: $padding-xxl}
   &-xl {padding: $padding-xl}
@@ -573,6 +616,34 @@ LABEL
 
 /*
 =========================
+TAB
+=========================
+*/
+.cls-tab {
+  border-bottom: 2px solid rgba(34,34,34,.05);
+  .tab-row {
+    padding: 20px 0px;
+    &-item {
+      color: #333;
+      font-weight: 700;
+      opacity: 0.7;
+      margin-right: $elm-margin-xl;
+      padding-bottom: 20px;
+      border-bottom: none;
+      &.selected {
+        color: #000;
+        opacity: 1;
+        border-bottom: 2px solid #000;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*
+=========================
 DROPDOWN
 =========================
 */
@@ -636,7 +707,7 @@ DROPDOWN
 ICON
 =========================
 */
-.cls-icon {
+.cls-icon, .cls-icon-boxed {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,9 +720,6 @@ ICON
    height: 65%;
    width: 65%;
    fill: #333CCC;
-  }
-  &.cls-icon-boxed {
-    background-color: $icon-container-color;
   }
   &.touchable {
     &:hover {
@@ -675,7 +743,7 @@ ICON
   }
 }
 
-.cls-icon-brand {
+.cls-icon-boxed {
   background-color: $color-brand-icon-box;
   &:hover {
     background-color: $color-brand-icon-box-hover;
@@ -747,7 +815,7 @@ ALERT
 =========================
 */
 .cls-prompt-wrapper {
-  visibility: initial;
+  visibility: hidden;
   &.hide {
       visibility: hidden;
   }
@@ -794,7 +862,7 @@ INPUTS
 =========================
 */
 
-.cls-input, .cls-input-search, .cls-input-textarea {
+.cls-input, .cls-input-search, .cls-input-textarea, .cls-input-icon {
   &.input-outline-white {
     background: transparent;
     border: 1px solid #efefef;
@@ -813,7 +881,7 @@ INPUTS
   }
 }
 
-.cls-input, .cls-input-textarea {
+.cls-input, .cls-input-textarea, .cls-input-icon {
   margin-bottom: $input-margin-bottom;
   border-radius: $input-border-radius;
   width: -webkit-fill-available;
@@ -826,6 +894,8 @@ INPUTS
   }
   &:focus {
     outline:none;
+    border: $input-border-focus;
+    background-color: $color-brand-input-focus-bg;
   }
   &::placeholder {
     color: $color-p-light;
@@ -864,6 +934,46 @@ INPUTS
             width: 100%;
         }
     }
+}
+
+.cls-input-icon {
+  border: 1px solid #efefef;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 1%);
+  border-radius: 4px;
+  padding: 0px !important;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  &.size-l {
+    height: 50px;
+    font-size: 18px;
+    input {
+      font-size: 18px;
+    }
+  }
+  div, i {
+    flex-shrink: 0;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  input {
+    width: -webkit-fill-available !important;
+    border: 0px !important;
+    margin: 0;
+    padding: 10px;
+    background: #efefef;
+    border-radius: 0px;
+    &:focus {
+      outline:none;
+      background-color: $color-brand-input-focus-bg;
+    }
+  }
 }
 
 .cls-input-phone {
@@ -961,7 +1071,7 @@ INPUTS
   
   /* When the checkbox is checked, add a blue background */
   & input:checked ~ .checkmark {
-    background-color: $color-brand;
+    background-color: $color-brand-icon;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -1031,10 +1141,10 @@ INPUTS
     }
   }
   input:checked + .slider {
-    background-color: $color-brand;
+    background-color: $color-brand-icon;
   }
   input:focus + .slider {
-    box-shadow: 0 0 1px $color-brand;
+    box-shadow: 0 0 1px $color-brand-icon;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -1684,69 +1794,25 @@ PLACEHOLDER
   animation: pulse 1s infinite ease-in-out;
 }
 
-.pt-h1 {
-  height: 40px;
-}
-
-.pt-h3 {
-  height: 24px;
-}
-
-.pt-10H {
-  height: 10px;
-}
-.pt-15H {
-  height: 15px;
-}
-.pt-20H {
-  height: 20px;
-}
-.pt-25H {
-  height: 25px;
-}
-.pt-40H {
-  height: 40px;
-}
-.pt-100H {
-  height: 100px;
-}
-.pt-250H {
-  height: 250px;
-}
-.pt-25H {
-  width: 25px;
-}
-.pt-100W {
-  width: 100px;
-}
-.pt-150W {
-  width: 150px;
-}
-
-.pt-200W {
-  width: 200px;
-}
-
-.pt-250W {
-  width: 250px;
-}
-
-.pt-10pW {
-  width: 10%;
-}
-.pt-30pW {
-  width: 30%;
-}
-.pt-50pW {
-  width: 50%;
-}
-
-.pt-70pW {
-  width: 70%;
-}
-.pt-100pW {
-  width: 100%;
-}
+.pt-h1 {height: 40px;}
+.pt-h3 {height: 24px;}
+.pt-10H {height: 10px;}
+.pt-15H {height: 15px;}
+.pt-20H {height: 20px;}
+.pt-25H {height: 25px;}
+.pt-40H {height: 40px;}
+.pt-100H {height: 100px;}
+.pt-250H {height: 250px;}
+.pt-25H {width: 25px;}
+.pt-100W {width: 100px;}
+.pt-150W {width: 150px;}
+.pt-200W {width: 200px;}
+.pt-250W {width: 250px;}
+.pt-10pW {width: 10%;}
+.pt-30pW {width: 30%;}
+.pt-50pW {width: 50%;}
+.pt-70pW {width: 70%;}
+.pt-100pW {width: 100%;}
 @keyframes pulse {
     0% {
         background-color: rgba(165, 165, 165, 0.1)

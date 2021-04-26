@@ -18,12 +18,14 @@ $color-brand-label-hover-text:#D1D2F8;
 $color-brand-text: #333CCC;
 $color-brand-icon-box: #ebecfa;
 $color-brand-icon-box-hover: null;
-$color-brand-icon: null;
+$color-brand-icon: #333CCC;
 $color-brand-icon-hover: null;
 $color-brand-navbar: null;
+$color-brand-navbar-text: #FFF;
 $color-brand-sidebar: #0C1944;
 $color-brand-sidebar-text: #FFF;
-$color-brand-navbar-text: #FFF;
+$color-brand-sidebar-text-hover: #FFF;
+$color-brand-sidebar-text-selected: #FFF;
 $color-brand-sidebar-nav: transparent;
 $color-brand-sidebar-nav-selected: #333CCC;
 $color-brand-sidebar-nav-hover: #13152f;
@@ -33,6 +35,8 @@ $color-brand-list-hover-text: null;
 $color-brand-card: #FFF;
 $color-brand-panel-border: #333CCC;
 $color-brand-panel-background: #ebecfa;
+$color-brand-input-focus-border: #333CCC;
+$color-brand-input-focus-bg: #ebecfa;
 
 //
 $color-p-dark: #000000;
@@ -58,7 +62,15 @@ $color-white: #ffffff;
 $color-white-light: #fafafa;
 
 
-// Paddings
+// Margin & Paddings
+$margin-xxl: 60px;
+$margin-xl: 50px;
+$margin-l: 40px;
+$margin-m: 20px;
+$margin-s: 15px;
+$margin-xs: 10px;
+$margin-xxs: 5px;
+$margin-null: 0px;
 $padding-xxl: 60px;
 $padding-xl: 50px;
 $padding-l: 40px;
@@ -94,11 +106,12 @@ $navbar-bg-color: #FFF;
 $sidebar-width: 20%;
 $sidebar-margin-top: 0;
 $sidebar-widthless: 80%;
-$sidebar-padding: 10px;
 $sidebar-border: 0px;
 $sidebar-header-width: 80%;
 $sidebar-header-margin: 50px;
+$sidebar-header-padding: 0px;
 $sidebar-nav-height: 40px;
+$sidebar-nav-padding: 10px;
 $sidebar-nav-width: 80%;
 $sidebar-nav-item-border-radius: 4px;
 
@@ -115,6 +128,8 @@ $window-padding: 10px;
 $window-container-margin-top: 50px;
 $window-container-width: 100%;
 $window-col1-content-width: 85%;
+$window-col1-bg: #f9f9f9;
+$window-col2-bg: #f9f9f9;
 $window-col2-content-width: 85%;
 $window-col2-content-padding: 50px;
 
@@ -152,6 +167,7 @@ $input-border-radius: 4px;
 $input-text-color: #333;
 $input-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 $input-border: 1px solid #efefef !important;
+$input-border-focus: 1px solid $color-brand-input-focus-border !important;
 $input-bg-color: #FFF;
 
 // Buttons

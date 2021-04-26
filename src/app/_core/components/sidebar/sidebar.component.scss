@@ -16,7 +16,7 @@
         width: $sidebar-header-width;
         margin: $sidebar-header-margin auto;
         .branding {
-            padding: $sidebar-padding;
+            padding: $sidebar-header-padding;
         }
         .profile {
             &-thumbnail {
@@ -40,18 +40,23 @@
             display: flex;
             height: $sidebar-nav-height;
             cursor: pointer;
-            padding: $sidebar-padding;
+            padding: $sidebar-nav-padding;
             margin-bottom: $elm-margin;
             align-items: center;
             border-radius: $sidebar-nav-item-border-radius;
             font-weight: 700;
             &:hover {
                 background-color: $color-brand-sidebar-nav-hover;
+                color: $color-brand-sidebar-text-hover;
             }
             &.selected {
                 background-color: $color-brand-sidebar-nav-selected;
+                color: $color-brand-sidebar-text-selected;
                 &:hover {
                     background-color: $color-brand-sidebar-nav-selected;
+                }
+                svg {
+                    fill: #FFF;
                 }
             }
             i {
